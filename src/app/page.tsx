@@ -1,93 +1,46 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-primary-dark to-primary-grey rounded-3xl shadow-primary-grey">
+      <main>
         <ol>
           <li>
-            Get started by editing <code>src/app/page.tsx</code>.
+            Hello.
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>My name is Marco</li>
         </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
       </main>
-      <footer className={styles.footer}>
+      <footer className="flex items-center justify-end">
         <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="flex items-center justify-center"
+          href="https://github.com/marcorezon"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="/file.svg"
-            alt="File icon"
+            src="/images/githubLogo.svg"
+            alt="GitHub icon"
             width={16}
             height={16}
           />
-          Learn
+          GitHub
         </a>
         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="flex items-center justify-center"
+          href="https://www.linkedin.com/in/marco-rezon-4770b1222/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Image
             aria-hidden
-            src="/window.svg"
-            alt="Window icon"
+            src="/images/linkedInBlackLogo.wine.svg"
+            alt="LinkedIn icon"
             width={16}
             height={16}
           />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+          LinkedIn
         </a>
       </footer>
     </div>
