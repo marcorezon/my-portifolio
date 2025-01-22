@@ -4,7 +4,7 @@ import applicationData from "../../data/applicationData.json";
 
 export function Header() {
   const shadowStyle =
-    "bg-gradient-to-r from-primary-black to-primary-dark shadow-black shadow-md";
+    "bg-gradient-to-r from-primary-black to-black shadow-black shadow-md";
 
   return (
     <div
