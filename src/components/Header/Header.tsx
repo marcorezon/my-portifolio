@@ -8,7 +8,7 @@ export function Header() {
 
   return (
     <div
-      className="flex items-center justify-evenly w-full 
+      className="fixed flex items-center justify-evenly w-full 
         h-[75px] bg-primary-dark"
     >
       <span className="text-lg flex gap-2 items-center font-semibold">

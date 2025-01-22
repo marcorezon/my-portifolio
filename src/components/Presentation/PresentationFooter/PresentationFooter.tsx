@@ -1,38 +1,18 @@
-import Image from "next/image";
+import applicationData from "../../../data/applicationData.json";
+import { PresentationFooterItem } from "./PresentationFooterItem/PresentationFooter";
 
-export function PresentationFooter () {
-    return (
-        <footer className="flex items-center justify-start ml-6 gap-4">
-        <a
-          className="flex items-center justify-center font-semibold gap-1"
-          href="https://github.com/marcorezon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/images/githubLogo.svg"
-            alt="GitHub icon"
-            width={16}
-            height={16}
+export function PresentationFooter() {
+  return (
+    <footer className="flex items-center justify-start gap-4 ml-6 mb-6">
+      {applicationData.presentationFooter.items.map(
+        (item: { title: string; path: string }, index: number) => (
+          <PresentationFooterItem
+            key={index}
+            title={item.title}
+            path={item.path}
           />
-          GitHub
-        </a>
-        <a
-          className="flex items-center justify-center font-semibold gap-1"
-          href="https://www.linkedin.com/in/marco-rezon-4770b1222/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/images/linkedInBlackLogo.wine.svg"
-            alt="LinkedIn icon"
-            width={16}
-            height={16}
-          />
-          LinkedIn
-        </a>
-      </footer>
-    );
+        )
+      )}
+    </footer>
+  );
 }

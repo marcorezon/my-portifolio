@@ -5,8 +5,8 @@ import applicationData from "../../data/applicationData.json";
 
 export function Presentation() {
   return (
-    <section className="w-full h-full">
-      <main className="flex items-center justify-around">
+    <section className="w-full h-full flex flex-col items-around justify-center">
+      <main className="h-full flex items-center justify-around">
         <div className="flex flex-col justify-around gap-7">
           <h2 className="text-xl font-bold">Front End developer</h2>
           <ol>
@@ -26,15 +26,17 @@ export function Presentation() {
           </div>
         </div>
 
-        <figure>
+        <div>
           <Image
             src="/images/profile.png"
             alt="Image"
-            height={500}
-            width={500}
+            height={300}
+            width={300}
             objectFit="cover"
+            quality={100}
+            className="rounded-lg"
           />
-        </figure>
+        </div>
       </main>
       <PresentationFooter />
     </section>

@@ -12,5 +12,11 @@
         {"name": "Typescript", "path": "\\images\\typescript-svgrepo-com.svg"},
         {"name": "Javascript", "path": "\\images\\javascript-svgrepo-com.svg"},
         {"name": "Next.JS", "path": "\\images\\next-js-svgrepo-com.svg"}
-    ]
+    ],
+    "presentationFooter": {
+        "items": [
+            {"title": "Github","path": "\\images\\githubLogo.svg"},
+            {"title": "LinkedIn","path": "\\images\\linkedInBlackLogo.wine.svg"}
+        ]
+    }
 }
