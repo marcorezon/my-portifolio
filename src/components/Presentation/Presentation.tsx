@@ -28,7 +28,7 @@ export function Presentation() {
 
         <figure>
           <Image
-            src="https://images.pexels.com/photos/13009437/pexels-photo-13009437.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="/images/profile.png"
             alt="Image"
             height={500}
             width={500}
