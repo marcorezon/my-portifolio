@@ -8,7 +8,7 @@ export function Presentation() {
     <section className="w-full h-full flex flex-col items-around justify-center">
       <main className="h-full flex items-center justify-around">
         <div className="flex flex-col justify-around gap-7">
-          <h2 className="text-xl font-bold">Front End developer</h2>
+          <h2 className="text-3xl font-bold">Front-end Developer</h2>
           <ol>
             <li>Hello.</li>
             <li>My name is Marco</li>
