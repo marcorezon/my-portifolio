@@ -1,0 +1,16 @@
+{   
+    "header": {
+        "name": "Marco Rêzon",
+        "options": [
+            {"title": "About me", "path": "/"},
+            {"title": "Projects", "path": "/"},
+            {"title": "Components", "path": "/"}
+        ]
+    },
+    "technologies": [
+        {"name": "React", "path": "\\images\\react-svgrepo-com.svg"},
+        {"name": "Typescript", "path": "\\images\\typescript-svgrepo-com.svg"},
+        {"name": "Javascript", "path": "\\images\\javascript-svgrepo-com.svg"},
+        {"name": "Next.JS", "path": "\\images\\next-js-svgrepo-com.svg"}
+    ]
+}
