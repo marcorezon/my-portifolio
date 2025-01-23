@@ -3,7 +3,7 @@ import { Presentation } from "@/components/Presentation/Presentation";
 
 export default function Home() {
   return (
-    <div className="h-full flex flex-col justify-center bg-transparent">
+    <div className="h-full flex flex-col justify-center bg-transparent py-[10%]">
       <Presentation />
       <BackgroundGradient />
     </div>

@@ -1,14 +1,9 @@
-import Image from "next/image";
+import { IconRetriever } from "../IconRetriever/IconRetriever";
 
-interface ListItemProps {
-  name: string;
-  path: string;
-}
-
-export function ListItem({ name, path }: ListItemProps) {
+export function ListItem({ name }: { name: string }) {
   return (
-    <li className="flex items-center font-semibold text-md p-2 rounded bg-primary-transparent gap-2 cursor-pointer	hover:scale-105">
-      <Image src={path} width={20} height={20} alt={`${name} logo`} />
+    <li className="h-fit flex items-center font-semibold text-md p-2 rounded bg-primary-transparent gap-2 cursor-pointer	hover:scale-105">
+      <IconRetriever iconName={name} />
       {name}
     </li>
   );

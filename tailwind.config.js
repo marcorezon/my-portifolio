@@ -27,7 +27,7 @@ module.exports = {
           transparent: "#33323229",
         },
         secondary: {
-          100: "#E2E2D5",
+          "silver": "#cfbebecf",
           200: "#888883",
         },
       },

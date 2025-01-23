@@ -5,6 +5,32 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --transparent: #33323257;
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 6px;
+    margin-block: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    margin-top: 75px;
+    background: transparent;
+    border-radius: 40px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 10px;
+    background: var(--transparent);
+    border-radius: 100vh;
+    border: 1px solid transparent;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--transparent);
+    cursor: pointer;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

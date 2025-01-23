@@ -2,10 +2,12 @@ import Image from "next/image";
 import { PresentationFooter } from "./PresentationFooter/PresentationFooter";
 import applicationData from "../../data/applicationData.json";
 import { ListItem } from "../common/ListItem/ListItem";
+import { ProjectDisplayer } from "../common/ProjectDisplayer.tsx/ProjectDisplayer";
+import { ProjectsProps } from "@/shared/interfaces";
 
 export function Presentation() {
   return (
-    <section className="w-full h-full flex flex-col items-around justify-center bg-transparent gap-20">
+    <section className="w-full h-full flex flex-col items-center justify-center bg-transparent gap-20">
       <main className="flex flex-wrap items-center justify-around">
         <div className="flex flex justify-around gap-7">
           <div>
@@ -50,6 +52,9 @@ export function Presentation() {
         </div>
       </main>
       <PresentationFooter />
+      {applicationData.projects.map((project, index) => (
+        <ProjectDisplayer {...(project as ProjectsProps)} />
+      ))}
     </section>
   );
 }
