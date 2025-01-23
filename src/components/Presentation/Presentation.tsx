@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { PresentationFooter } from "./PresentationFooter/PresentationFooter";
-import { ListItem } from "../commom/ListItem/ListItem";
 import applicationData from "../../data/applicationData.json";
+import { ListItem } from "../common/ListItem/ListItem";
 
 export function Presentation() {
   return (
