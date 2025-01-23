@@ -1,11 +1,28 @@
-interface ListItemProps {
-  children: React.ReactNode;
-}
+"use client";
 
-export function ListHeaderItem({ children }: ListItemProps) {
+import { usePathname } from "next/navigation";
+
+export function ListHeaderItem({ title }: { title: string }) {
+  const pathname = usePathname();
+
+  const logicalController = { displayBottomStyle: false, borderFormat: null };
+
+  if (pathname.length === 1 && title === "About me") {
+    logicalController.displayBottomStyle = true;
+  } else if (pathname.toLowerCase() === title) {
+    logicalController.displayBottomStyle = true;
+  }
+
+  const bottomStyle =
+    "before:absolute before:bottom-1 before:h-1 before:min-w-[3rem] before:rounded-md before:bg-primary-transparent";
+
   return (
-    <li className="w-full font-semibold text-lg text-center py-2 cursor-pointer hover:bg-primary-grey">
-      <a>{children}</a>
+    <li
+      className={`relative w-full flex justify-center py-2 rounded-3xl font-semibold text-lg text-center cursor-pointer hover:bg-primary-transparent 
+        ${logicalController.displayBottomStyle ? bottomStyle : ""}
+      `}
+    >
+      <a>{title}</a>
     </li>
   );
 }

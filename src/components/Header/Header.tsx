@@ -4,7 +4,6 @@ import applicationData from "../../data/applicationData.json";
 import styles from "./Header.module.css";
 
 export function Header() {
-
   return (
     <div
       className={`fixed flex items-center justify-evenly w-full 
@@ -19,13 +18,11 @@ export function Header() {
         />
         {applicationData.header.name}
       </span>
-      <div
-        className="rounded-3xl bg-primary-transparent xs:w-[70%] xl:w-[40%]"
-      >
+      <div className="rounded-3xl bg-primary-transparent xs:w-[70%] xl:w-[40%]">
         <ol className="flex flex-row items-center justify-around w-full">
           {applicationData.header.options.map(
             (option: { title: string }, index: number) => (
-              <ListHeaderItem key={index}>{option.title}</ListHeaderItem>
+              <ListHeaderItem key={index} title={option.title}/>
             )
           )}
         </ol>
