@@ -6,7 +6,7 @@ import { Header } from "@/components/Header/Header";
 const signika_negative = Signika_Negative({
   variable: "--font-pt-sans-narrow",
   subsets: ["latin"],
-})
+});
 
 export const metadata: Metadata = {
   title: "About me | Marco",
@@ -19,10 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`w-full h-full ${signika_negative.variable}`}>
-      <body className="w-full h-full">
+    <html lang="en" className={`${signika_negative.variable}`}>
+      <body>
         <Header />
-        {children}
+        <div className="pt-[75px] w-full h-full">{children}</div>
       </body>
     </html>
   );
