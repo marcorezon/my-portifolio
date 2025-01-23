@@ -18,7 +18,7 @@ export function Header() {
         />
         {applicationData.header.name}
       </span>
-      <div className="rounded-3xl bg-primary-transparent xs:w-[70%] xl:w-[40%]">
+      <div className="rounded-3xl bg-primary-transparent xs:w-[70%] xl:w-[40%] shadow-lg">
         <ol className="flex flex-row items-center justify-around w-full">
           {applicationData.header.options.map(
             (option: { title: string }, index: number) => (
