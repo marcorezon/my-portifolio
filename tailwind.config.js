@@ -9,6 +9,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'xs': '0px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       colors: {
         'primary': {
@@ -16,6 +24,7 @@ module.exports = {
           dark: '#0a0a0a',
           grey: '#292929',
           light_grey: '#333232',
+          transparent: '#3332324a',
         },
         'secondary': {
           100: '#E2E2D5',

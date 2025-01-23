@@ -5,14 +5,14 @@ import applicationData from "../../data/applicationData.json";
 
 export function Presentation() {
   return (
-    <section className="w-full h-full flex flex-col items-around justify-center">
+    <section className="w-full h-full flex flex-col items-around justify-center bg-transparent">
       <main className="h-full flex flex-wrap items-center justify-around">
         <div className="flex flex justify-around gap-7">
           <div>
             <Image
               src="/images/profile.png"
               alt="Image"
-              height={300}
+              height={300} 
               width={300}
               objectFit="cover"
               quality={100}

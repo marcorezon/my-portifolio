@@ -1,0 +1,110 @@
+.container {
+  z-index: -2;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: radial-gradient(
+      70% 53% at 19% 89%,
+      #21c3f7ff 0%,
+      #073aff00 100%
+    ),
+    radial-gradient(42% 53% at 99% 5%, #ffffff86 7%, #073aff00 100%),
+    radial-gradient(42% 53% at 113% 5%, #6dffaf7c 24%, #073aff00 100%),
+    radial-gradient(31% 43% at 82% -17%, #ffffff1e , #0f4aeba6 100%),
+    radial-gradient(35% 56% at 91% 74%, #1316dd15 9%, #073aff00 100%),
+    radial-gradient(74% 86% at 67% 38%, #6dffaef5 24%, #073aff00 100%),
+    linear-gradient(125deg, #4eb5ffff 1%, #4c00fcff 100%);
+}
+
+.circle {
+  z-index: -1;
+  position: absolute;
+  width: calc(var(--i) * 100px);
+  height: calc(var(--i) * 100px);
+  background-image: linear-gradient(
+    80deg,
+    rgb(5, 124, 172),
+    rgb(43, 247, 202, 0.5)
+  );
+}
+
+.up {
+  animation-name: up, blob;
+  animation-duration: 20s, 3.5s;
+  animation-iteration-count: infinite, infinite;
+}
+
+.down {
+  animation-name: down, blob;
+  animation-duration: 20s, 5.5s;
+  animation-iteration-count: infinite, infinite;
+}
+
+.left {
+  animation-name: left, blob;
+  animation-duration: 20s, 2.5s;
+  animation-iteration-count: infinite, infinite;
+}
+
+@keyframes up {
+  0%,
+  100% {
+    bottom: 90%;
+    left: 15%;
+  }
+
+  30% {
+    bottom: 50%;
+    left: 35%;
+  }
+
+  50% {
+    bottom: 40%;
+    left: 35%;
+  }
+}
+
+@keyframes down {
+  0%,
+  100% {
+    bottom: 80%;
+    left: 45%;
+  }
+  50% {
+    bottom: 0;
+    left: 65%;
+  }
+}
+
+@keyframes left {
+  0%,
+  100% {
+    bottom: 75%;
+    left: 35%;
+  }
+
+  50% {
+    bottom: 25%;
+    left: 55%;
+    transform: scale(1.4);
+  }
+}
+
+@keyframes blob {
+  0%,
+  100% {
+    filter: blur(30px);
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+  }
+
+  33% {
+    border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;
+  }
+
+  66% {
+    border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+  }
+}

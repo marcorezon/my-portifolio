@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { ListHeaderItem } from "./ListHeaderItem/ListHeaderItem";
 import applicationData from "../../data/applicationData.json";
+import styles from "./Header.module.css";
 
 export function Header() {
-  const shadowStyle =
-    "bg-gradient-to-r from-primary-black to-black shadow-black shadow-md";
 
   return (
     <div
-      className="fixed flex items-center justify-evenly w-full 
-        h-[75px] bg-primary-dark"
+      className={`fixed flex items-center justify-evenly w-full 
+        h-[75px] bg-primary-dark z-10 ${styles.glass}`}
     >
       <span className="text-lg flex gap-2 items-center font-semibold">
         <Image
@@ -21,7 +20,7 @@ export function Header() {
         {applicationData.header.name}
       </span>
       <div
-        className={`w-[40%] rounded-md border-primary-light_grey ${shadowStyle}`}
+        className="rounded-3xl bg-primary-transparent xs:w-[70%] xl:w-[40%]"
       >
         <ol className="flex flex-row items-center justify-around w-full">
           {applicationData.header.options.map(
