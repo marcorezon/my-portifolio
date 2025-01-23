@@ -11,7 +11,7 @@ export function PresentationFooterItem({
 }: PresentationFooterItemProps) {
   return (
     <a
-      className="flex items-center justify-center font-semibold gap-1 hover:scale-105"
+      className="flex items-center justify-center text-md font-semibold gap-1 hover:scale-105"
       href="https://github.com/marcorezon"
       target="_blank"
       rel="noopener noreferrer"
@@ -20,8 +20,8 @@ export function PresentationFooterItem({
         aria-hidden
         src={path}
         alt={`${title} icon`}
-        width={16}
-        height={16}
+        width={24}
+        height={24}
       />
       {title}
     </a>

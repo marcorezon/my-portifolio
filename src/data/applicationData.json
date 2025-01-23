@@ -1,22 +1,27 @@
-{   
-    "header": {
-        "name": "Marco Rêzon",
-        "options": [
-            {"title": "About me", "path": "/"},
-            {"title": "Projects", "path": "/"},
-            {"title": "Components", "path": "/"}
-        ]
-    },
+{
+  "about_me": {
+    "initial_message": "Hi!",
+    "role": "Front-end Developer",
     "technologies": [
-        {"name": "React", "path": "\\images\\react-svgrepo-com.svg"},
-        {"name": "Typescript", "path": "\\images\\typescript-svgrepo-com.svg"},
-        {"name": "Javascript", "path": "\\images\\javascript-svgrepo-com.svg"},
-        {"name": "Next.JS", "path": "\\images\\next-js-svgrepo-com.svg"}
+      { "name": "React", "path": "\\images\\react-svgrepo-com.svg" },
+      { "name": "Typescript", "path": "\\images\\typescript-svgrepo-com.svg" },
+      { "name": "Javascript", "path": "\\images\\javascript-svgrepo-com.svg" },
+      { "name": "Next.JS", "path": "\\images\\next-js-svgrepo-com.svg" }
     ],
-    "presentationFooter": {
-        "items": [
-            {"title": "Github","path": "\\images\\githubLogo.svg"},
-            {"title": "LinkedIn","path": "\\images\\linkedInBlackLogo.wine.svg"}
-        ]
-    }
+    "text": "I am currently looking for a new oportunity, my inbox is aways open. Whether you have any question or just want to talk, i will try my best to get back to you!"
+  },
+  "header": {
+    "name": "Marco Rêzon",
+    "options": [
+      { "title": "About me", "path": "/" },
+      { "title": "Projects", "path": "/" },
+      { "title": "Components", "path": "/" }
+    ]
+  },
+  "presentationFooter": {
+    "items": [
+      { "title": "Github", "path": "\\images\\githubLogo.svg" },
+      { "title": "LinkedIn", "path": "\\images\\linkedInBlackLogo.wine.svg" }
+    ]
+  }
 }

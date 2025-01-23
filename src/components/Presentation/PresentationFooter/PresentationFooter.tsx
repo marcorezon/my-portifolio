@@ -3,7 +3,7 @@ import { PresentationFooterItem } from "./PresentationFooterItem/PresentationFoo
 
 export function PresentationFooter() {
   return (
-    <footer className="flex items-center justify-start gap-4 ml-6 mb-6">
+    <footer className="flex items-center justify-center gap-6">
       {applicationData.presentationFooter.items.map(
         (item: { title: string; path: string }, index: number) => (
           <PresentationFooterItem
