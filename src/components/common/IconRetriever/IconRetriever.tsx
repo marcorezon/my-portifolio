@@ -39,7 +39,7 @@ export function IconRetriever({
         dangerouslySetInnerHTML={{
           __html: svgContent.replace(
             "<svg",
-            `<svg width=${width} height=${height}"`
+            `<svg width=${width} height=${height} length`
           ),
         }}
       />
