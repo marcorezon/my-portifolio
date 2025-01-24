@@ -1,9 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import { ListHeaderItem } from "./ListHeaderItem/ListHeaderItem";
 import applicationData from "../../data/applicationData.json";
 import styles from "./Header.module.css";
+import { useScreenSize } from "@/hooks/useScreenSize";
+import { MobileHeader } from "./MobileHeader/MobileHeader";
 
 export function Header() {
+  const screenSize = useScreenSize();
+
+  if (screenSize.isMobile) {
+    return <MobileHeader />;
+  }
+
   return (
     <div
       className={`fixed flex items-center justify-evenly w-full 
@@ -22,7 +32,7 @@ export function Header() {
         <ol className="flex flex-row items-center justify-around w-full">
           {applicationData.header.options.map(
             (option: { title: string }, index: number) => (
-              <ListHeaderItem key={index} title={option.title}/>
+              <ListHeaderItem key={index} title={option.title} />
             )
           )}
         </ol>
