@@ -7,7 +7,7 @@ import applicationData from "../../data/applicationData.json";
 export function Presentation() {
   return (
     <section className="w-full h-full flex flex-col items-center justify-center bg-transparent gap-20">
-      <main className="flex flex-wrap items-center justify-around">
+      <main className="min-h-[70vh] flex flex-wrap items-center justify-around">
         <div className="flex flex flex-wrap justify-around gap-7">
           <div>
             <Image
