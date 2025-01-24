@@ -5,7 +5,7 @@ import { ProjectsProps } from "@/shared/interfaces";
 
 export function PresentationArticle() {
   return (
-    <section className="w-full flex flex-col items-start mt-[20vh] gap-[5vh]">
+    <section className="w-full flex flex-col items-start gap-[5vh] my-6">
       <h3 className="text-2xl font-bold ml-[15vw]">Last project</h3>
       <div className="w-full max-w-[1043px] self-center flex flex-wrap items-center justify-evenly gap-8">
         <Article />

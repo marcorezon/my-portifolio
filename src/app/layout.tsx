@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className={`${signika_negative.variable}`}>
       <body>
         <Header />
-        <div className="w-full min-h-full xs:pb-[75px] md:pt-[75px]">{children}</div>
+        <div className="w-full min-h-full xs:pb-[75px] md:pb-0 md:pt-[75px]">{children}</div>
       </body>
     </html>
   );

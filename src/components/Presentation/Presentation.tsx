@@ -8,7 +8,7 @@ export function Presentation() {
   return (
     <section className="w-full h-full flex flex-col items-center justify-center bg-transparent gap-20">
       <main className="flex flex-wrap items-center justify-around">
-        <div className="flex flex justify-around gap-7">
+        <div className="flex flex flex-wrap justify-around gap-7">
           <div>
             <Image
               src="/images/profile.png"
@@ -20,7 +20,7 @@ export function Presentation() {
               className="rounded-full"
             />
           </div>
-          <div className="max-w-[560px] flex flex-col justify-center gap-6">
+          <div className="max-w-[560px] flex flex-col justify-center gap-6 p-10">
             <h2 className="text-3xl font-bold">
               {applicationData.about_me.role}
             </h2>
@@ -43,8 +43,8 @@ export function Presentation() {
           </div>
         </div>
       </main>
-      <PresentationFooter />
       <PresentationArticle />
+      <PresentationFooter />
     </section>
   );
 }
