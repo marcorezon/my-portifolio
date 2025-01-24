@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { PresentationFooter } from "./PresentationFooter/PresentationFooter";
-import applicationData from "../../data/applicationData.json";
 import { ListItem } from "../common/ListItem/ListItem";
-import { ProjectDisplayer } from "../common/ProjectDisplayer.tsx/ProjectDisplayer";
-import { ProjectsProps } from "@/shared/interfaces";
+import { PresentationFooter } from "./PresentationFooter/PresentationFooter";
+import { PresentationArticle } from "./PresentationArticle/PresentationArticle";
+import applicationData from "../../data/applicationData.json";
 
 export function Presentation() {
   return (
@@ -35,14 +34,8 @@ export function Presentation() {
               <p className="font-semibold text-xl mb-3">Technologies:</p>
               <ul className="flex flex-wrap gap-2">
                 {applicationData.about_me.technologies.map(
-                  (
-                    technology: { name: string },
-                    index: number
-                  ) => (
-                    <ListItem
-                      key={index}
-                      name={technology.name}
-                    />
+                  (technology: { name: string }, index: number) => (
+                    <ListItem key={index} name={technology.name} />
                   )
                 )}
               </ul>
@@ -51,9 +44,7 @@ export function Presentation() {
         </div>
       </main>
       <PresentationFooter />
-      {applicationData.projects.map((project, index) => (
-        <ProjectDisplayer {...(project as ProjectsProps)} />
-      ))}
+      <PresentationArticle />
     </section>
   );
 }
