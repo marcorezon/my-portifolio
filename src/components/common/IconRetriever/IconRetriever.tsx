@@ -5,6 +5,7 @@ interface IconRetrieverProps {
   style?: string;
   width?: number;
   height?: number;
+  pathVariant?: string;
 }
 
 export function IconRetriever({
@@ -12,9 +13,11 @@ export function IconRetriever({
   style = "",
   width,
   height,
+  pathVariant = "",
 }: IconRetrieverProps) {
-  const pathFormatter = `\\images\\${iconName
+  const pathFormatter = `\\images\\${pathVariant}${iconName
     .split(".")[0]
+    .split(" ")[0]
     .toLocaleLowerCase()}.svg`;
   return (
     <div>
