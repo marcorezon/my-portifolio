@@ -36,13 +36,12 @@ export function Presentation() {
               <ul className="flex flex-wrap gap-2">
                 {applicationData.about_me.technologies.map(
                   (
-                    technology: { name: string; path: string },
+                    technology: { name: string },
                     index: number
                   ) => (
                     <ListItem
                       key={index}
                       name={technology.name}
-                      path={technology.path}
                     />
                   )
                 )}
