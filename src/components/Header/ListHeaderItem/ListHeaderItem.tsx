@@ -14,7 +14,7 @@ export function ListHeaderItem({ title }: { title: string }) {
   }
 
   const bottomStyle =
-    "before:absolute before:bottom-1 before:h-1 before:min-w-[3rem] before:rounded-md before:bg-primary-transparent";
+    "before:absolute before:bottom-1 before:h-1 before:min-w-[3rem] before:rounded-md before:bg-gradient-to-r from-secondary-blue to-secondary-lightBlue";
 
   return (
     <li

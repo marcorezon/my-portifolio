@@ -23,12 +23,13 @@ module.exports = {
           black: "#1a1a1a",
           dark: "#0a0a0a",
           grey: "#292929",
-          light_grey: "#333232",
+          lightGrey: "#3332328a",
           transparent: "#33323229",
         },
         secondary: {
-          "silver": "#cfbebecf",
-          200: "#888883",
+          "silver": "#cfbebed9",
+          "blue": "#1056b95c",
+          "lightBlue": " #0e99e9",
         },
       },
       fontFamily: {
