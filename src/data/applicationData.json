@@ -8,7 +8,33 @@
       { "name": "Javascript" },
       { "name": "Next.JS" }
     ],
-    "text": "I am currently looking for a new oportunity, my inbox is aways open. Whether you have any question or just want to talk, i will try my best to get back to you!"
+    "text": "I am currently looking for a new oportunity, my inbox is aways open. Whether you have any question or just want to talk, i will try my best to get back to you!",
+    "experiences": [
+      {
+        "company": "Compass Texas AI/R",
+        "role": "Trainee Front-end Developer",
+        "type": "Full-time",
+        "period": "5 months"
+      },
+      {
+        "company": "Compass Uol AI/R",
+        "role": "Trainee Front-end Developer",
+        "type": "Full-time",
+        "period": "2 months"
+      },
+      {
+        "company": "Compass Uol AI/R",
+        "role": "Internship",
+        "type": "Part-time",
+        "period": "6 months"
+      },
+      {
+        "company": "Instituto Federal de Roraima",
+        "role": "Scholarship Holder",
+        "type": "Part-time",
+        "period": "10 months"
+      }
+    ]
   },
   "header": {
     "name": "Marco Rêzon",
