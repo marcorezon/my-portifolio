@@ -7,7 +7,7 @@ export default function Projects() {
       <h1 className="text-3xl font-bold">Projects</h1>
       <div className="grid xs:grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 place-content-between">
         {applicationData.projects.map((project, index) => (
-          <ProjectDisplayer key={index} project={project} styles="m-5" />
+          <ProjectDisplayer key={index} project={project} styles="cursor-pointer m-5 hover:scale-[1.05]" />
         ))}
       </div>
     </div>
