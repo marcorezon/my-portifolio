@@ -12,7 +12,7 @@ export function MobileHeaderItem({ title }: { title: string }) {
 
   if (pathname.length === 1 && title === "About me") {
     logicalController.displayBottomStyle = bottomStyle;
-  } else if (pathname.toLowerCase() === title) {
+  } else if (pathname.includes(title.toLowerCase())) {
     logicalController.displayBottomStyle = bottomStyle;
   }
 
