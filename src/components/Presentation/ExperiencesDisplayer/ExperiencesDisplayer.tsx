@@ -2,7 +2,7 @@ import applicationData from "../../../data/applicationData.json";
 
 export function ExperiencesDisplayer() {
   return (
-    <div className="flex flex-col gap-5">
+    <section className="flex flex-col gap-5 my-6 lg:h-[100vh]">
       <h2 className="text-2xl">Experiences</h2>
       {applicationData.about_me.experiences.map((experience, index) => (
         <ul key={index}>
@@ -13,6 +13,6 @@ export function ExperiencesDisplayer() {
           ))}
         </ul>
       ))}
-    </div>
+    </section>
   );
 }
