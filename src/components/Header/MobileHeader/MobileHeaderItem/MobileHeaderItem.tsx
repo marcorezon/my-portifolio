@@ -29,7 +29,7 @@ export function MobileHeaderItem({ title }: { title: string }) {
         height={25}
         pathVariant="headerIcons\"
       />
-      <span className="font-semibold text-sm text-white">{title}</span>
+      <span className="text-sm text-white">{title}</span>
     </Link>
   );
 }

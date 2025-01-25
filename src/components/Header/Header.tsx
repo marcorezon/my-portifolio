@@ -19,7 +19,7 @@ export function Header() {
       className={`fixed flex items-center justify-evenly w-full 
         h-[75px] bg-primary-dark z-10 ${styles.glass}`}
     >
-      <span className="text-lg flex gap-2 items-center font-semibold">
+      <span className="text-lg flex gap-2 items-center">
         <Image
           src="\images\codingLogo.svg"
           alt="Coding icon"

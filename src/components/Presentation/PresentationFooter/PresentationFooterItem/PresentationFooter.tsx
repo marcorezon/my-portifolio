@@ -11,7 +11,7 @@ export function PresentationFooterItem({
 }: PresentationFooterItemProps) {
   return (
     <a
-      className="flex items-center justify-center text-md font-semibold gap-1 hover:scale-105"
+      className="flex items-center justify-center gap-1 hover:scale-105"
       href="https://github.com/marcorezon"
       target="_blank"
       rel="noopener noreferrer"

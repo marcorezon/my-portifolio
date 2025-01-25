@@ -18,14 +18,14 @@ export function AboutMe() {
       </div>
       <div className="max-w-[560px] flex flex-col justify-center gap-6 p-10">
         <h1 className="text-3xl font-bold">{applicationData.about_me.role}</h1>
-        <p className="font-semibold text-md">
+        <p>
           <span>{applicationData.about_me.initial_message}</span>
           <br />
           <span>{applicationData.about_me.text}</span>
         </p>
 
         <div>
-          <p className="font-semibold text-xl mb-3">Technologies:</p>
+          <p className="text-xl mb-3">Technologies:</p>
           <ul className="flex flex-wrap gap-2">
             {applicationData.about_me.technologies.map(
               (technology: { name: string }, index: number) => (

@@ -23,7 +23,7 @@ export function ListHeaderItem({ title }: { title: string }) {
   return (
     <Link
       href={formatRedirectPath(title)}
-      className={`relative w-full flex items-center justify-center py-2 gap-2 rounded-3xl font-semibold text-lg text-center cursor-pointer hover:bg-primary-transparent 
+      className={`relative w-full flex items-center justify-center py-2 gap-2 rounded-3xl text-lg text-center cursor-pointer hover:bg-primary-transparent 
         ${logicalController.displayBottomStyle}
       `}
     >
