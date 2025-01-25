@@ -8,6 +8,14 @@
   --transparent: #33323257;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+
 html,
 body {
   width: 100%;
@@ -22,14 +30,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  color: white;
-  font-weight: 600;
+h1 {
+  font-size: 1.875rem;
 }
 
+h2, h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
 @layer utilities {
   ::-webkit-scrollbar {
     width: 6px;

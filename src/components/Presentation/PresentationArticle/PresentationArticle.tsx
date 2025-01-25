@@ -12,7 +12,7 @@ export function PresentationArticle() {
     <section
       className={`w-full flex flex-col items-start gap-[5vh] my-6 ${styles.presentation}`}
     >
-      <h3 className="text-2xl font-bold ml-[15vw]">Last project</h3>
+      <h3 className="font-bold ml-[15vw]">Last project</h3>
       <div className="w-full max-w-[1043px] self-center flex flex-wrap items-center justify-evenly gap-8">
         <Article />
         <ProjectDisplayer project={lastProject as ProjectsProps} />

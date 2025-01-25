@@ -28,7 +28,7 @@ export function ProjectDisplayer({
       <p className="text-sm text-secondary-silver">
         {project.subtitle}
       </p>
-      <h3 className="text-xl">{project.title}</h3>
+      <h4>{project.title}</h4>
       <hr />
       <div className="flex gap-4">
         {project.technologies.map((name, index) => (

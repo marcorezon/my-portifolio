@@ -17,7 +17,7 @@ export function AboutMe() {
         />
       </div>
       <div className="max-w-[560px] flex flex-col justify-center gap-6 p-10">
-        <h1 className="text-3xl font-bold">{applicationData.about_me.role}</h1>
+        <h1 className="font-bold">{applicationData.about_me.role}</h1>
         <p>
           <span>{applicationData.about_me.initial_message}</span>
           <br />
