@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IconRetriever } from "@/components/common/IconRetriever/IconRetriever";
+import formatRedirectPath from "@/shared/functions/formatRedirectPath";
 
 export function MobileHeaderItem({ title }: { title: string }) {
   const pathname = usePathname();
@@ -15,7 +17,8 @@ export function MobileHeaderItem({ title }: { title: string }) {
   }
 
   return (
-    <li
+    <Link
+      href={formatRedirectPath(title)}
       tabIndex={0}
       className={`h-full w-full flex flex-col items-center justify-center p-2 rounded-full focus:bg-primary-transparent ${logicalController.displayBottomStyle}`}
     >
@@ -27,6 +30,6 @@ export function MobileHeaderItem({ title }: { title: string }) {
         pathVariant="headerIcons\"
       />
       <span className="font-semibold text-sm text-white">{title}</span>
-    </li>
+    </Link>
   );
 }

@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { MobileHeader } from "./MobileHeader/MobileHeader";
 import { ListHeaderItem } from "./ListHeaderItem/ListHeaderItem";
+import { useScreenSize } from "@/hooks/useScreenSize";
 import applicationData from "../../data/applicationData.json";
 import styles from "./Header.module.css";
-import { useScreenSize } from "@/hooks/useScreenSize";
-import { MobileHeader } from "./MobileHeader/MobileHeader";
 
 export function Header() {
   const screenSize = useScreenSize();
@@ -28,13 +28,13 @@ export function Header() {
         />
         {applicationData.header.name}
       </span>
-      <ol className="flex flex-row items-center justify-around rounded-3xl bg-primary-transparent xs:w-[70%] xl:w-[40%]">
+      <nav className="flex flex-row items-center justify-around rounded-3xl bg-primary-transparent xs:w-[70%] xl:w-[40%]">
         {applicationData.header.options.map(
           (option: { title: string }, index: number) => (
             <ListHeaderItem key={index} title={option.title} />
           )
         )}
-      </ol>
+      </nav>
     </div>
   );
 }

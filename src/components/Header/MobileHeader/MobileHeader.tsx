@@ -7,13 +7,13 @@ export function MobileHeader() {
     <div
       className={`fixed w-full h-[75px] bottom-0 flex items-center z-10 bg-white border-0 ${styles.glass}`}
     >
-      <ol className="flex flex-row justify-around w-full">
+      <nav className="flex flex-row justify-around w-full">
         {applicationData.header.options.map(
           (option: { title: string }, index: number) => (
             <MobileHeaderItem key={index} title={option.title} />
           )
         )}
-      </ol>
+      </nav>
     </div>
   );
 }
