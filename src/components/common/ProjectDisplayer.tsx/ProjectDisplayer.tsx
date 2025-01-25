@@ -2,9 +2,17 @@ import Image from "next/image";
 import { IconRetriever } from "../IconRetriever/IconRetriever";
 import { ProjectsProps } from "@/shared/interfaces";
 
-export function ProjectDisplayer(project: ProjectsProps) {
+export function ProjectDisplayer({
+  project,
+  styles = "",
+}: {
+  project: ProjectsProps;
+  styles?: string;
+}) {
   return (
-    <div className="relative flex flex-col w-[300px] min-h-[300px] bg-primary-transparent rounded-md p-3 gap-4 shadow-lg">
+    <div
+      className={`relative flex flex-col w-[300px] min-h-[300px] bg-primary-transparent rounded-md p-3 gap-4 shadow-lg ${styles}`}
+    >
       <Image
         src="https://th.bing.com/th/id/OIG1.CgTbIrO0vUXLNU28HMdC"
         height={550}
