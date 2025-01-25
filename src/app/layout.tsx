@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Signika_Negative } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
+import { BackgroundGradient } from "@/components/common/BackgroundGradient.tsx/BackgroundGradient";
 
 const signika_negative = Signika_Negative({
   variable: "--font-pt-sans-narrow",
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en" className={`${signika_negative.variable}`}>
       <body>
         <Header />
+        <BackgroundGradient />
         <div className="w-full min-h-full xs:pb-[75px] md:pb-0 md:pt-[75px]">{children}</div>
       </body>
     </html>
