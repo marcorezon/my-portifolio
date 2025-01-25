@@ -4,14 +4,19 @@ import { ProjectsProps } from "@/shared/interfaces";
 
 export function ProjectDisplayer({
   project,
-  styles = "",
+  isFunctional,
 }: {
   project: ProjectsProps;
-  styles?: string;
+  isFunctional?: boolean;
 }) {
+  const functionalStyle = "cursor-pointer m-5 hover:scale-[1.05]";
+
   return (
     <div
-      className={`relative flex flex-col w-[300px] min-h-[300px] bg-primary-transparent rounded-md p-3 gap-4 shadow-lg ${styles}`}
+      tabIndex={isFunctional ? 0 : -1}
+      className={`relative flex flex-col w-[300px] min-h-[300px] bg-primary-transparent rounded-md p-3 gap-4 shadow-lg ${
+        isFunctional ? functionalStyle : ""
+      }`}
     >
       <Image
         src="https://th.bing.com/th/id/OIG1.CgTbIrO0vUXLNU28HMdC"
