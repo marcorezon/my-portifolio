@@ -8,8 +8,8 @@ export function Presentation() {
     <section className="w-full h-full flex flex-col items-center justify-center bg-transparent gap-20">
       <main className="min-h-[70vh] flex flex-wrap items-center justify-around">
         <AboutMe />
-        <ExperiencesDisplayer />
       </main>
+      <ExperiencesDisplayer />
 
       <PresentationArticle />
       <PresentationFooter />
