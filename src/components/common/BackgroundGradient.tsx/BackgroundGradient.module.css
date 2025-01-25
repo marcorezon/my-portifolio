@@ -109,3 +109,12 @@
     border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .circle {
+    z-index: -1;
+    position: absolute;
+    width: calc(var(--i) * 50px);
+    height: calc(var(--i) * 50px);
+  }
+}
