@@ -4,7 +4,7 @@ import applicationData from "../../../data/applicationData.json";
 
 export function AboutMe() {
   return (
-    <section className="min-h-[70vh] flex flex-wrap items-center justify-around gap-7 lg:h-[100vh]">
+    <section className="min-h-[70vh] flex flex-wrap items-center justify-around gap-7 lg:h-[80vh]">
       <div>
         <Image
           src="/images/profile.png"

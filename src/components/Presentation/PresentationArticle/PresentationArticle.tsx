@@ -10,7 +10,7 @@ export function PresentationArticle() {
 
   return (
     <section
-      className={`w-full flex flex-col items-start gap-[5vh] ${styles.presentation} lg:h-[100vh]`}
+      className={`w-full flex flex-col items-start justify-center gap-[5vh] ${styles.presentation} lg:h-[100vh]`}
     >
       <h3 className="font-bold ml-[15vw]">Last project</h3>
       <div className="w-full max-w-[1043px] self-center flex flex-wrap items-center justify-evenly gap-8">

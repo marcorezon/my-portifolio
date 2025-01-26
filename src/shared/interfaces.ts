@@ -1,5 +1,16 @@
 export interface ProjectsProps {
-    title: string;
-    subtitle: string;
-    technologies: string[];
-  }
+  title: string;
+  subtitle: string;
+  technologies: string[];
+}
+
+export interface ExperienceDetais {
+  period: string;
+  role: string;
+  type: string;
+}
+
+export interface Experience {
+  company: string;
+  details: ExperienceDetais;
+}

@@ -1,18 +1,15 @@
+import { ExperienceItem } from "./ExperienceItem/ExperienceItem";
 import applicationData from "../../../data/applicationData.json";
 
 export function ExperiencesDisplayer() {
   return (
-    <section className="flex flex-col gap-5 my-6 lg:h-[100vh]">
+    <section className="w-[70%] m-auto">
       <h2 className="text-2xl">Experiences</h2>
-      {applicationData.about_me.experiences.map((experience, index) => (
-        <ul key={index}>
-          {Object.entries(experience).map(([key, value]) => (
-            <li key={key}>
-              {key.charAt(0).toUpperCase() + key.slice(1)}: {value}
-            </li>
-          ))}
-        </ul>
-      ))}
+      <div className="flex justify-center items-center flex-wrap gap-5 my-6">
+        {applicationData.about_me.experiences.map((experience, index) => (
+          <ExperienceItem key={index} {...experience} />
+        ))}
+      </div>
     </section>
   );
 }

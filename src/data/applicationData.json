@@ -12,27 +12,35 @@
     "experiences": [
       {
         "company": "Compass Texas AI/R",
-        "role": "Trainee Front-end Developer",
-        "type": "Full-time",
-        "period": "5 months"
+        "details": {
+          "period": "5 months",
+          "role": "Trainee Front-end Developer",
+          "type": "Full-time"
+        }
       },
       {
         "company": "Compass Uol AI/R",
-        "role": "Trainee Front-end Developer",
-        "type": "Full-time",
-        "period": "2 months"
+        "details": {
+          "period": "2 months",
+          "role": "Trainee Front-end Developer",
+          "type": "Full-time"
+        }
       },
       {
         "company": "Compass Uol AI/R",
-        "role": "Internship",
-        "type": "Part-time",
-        "period": "6 months"
+        "details": {
+          "period": "6 months",
+          "role": "Internship",
+          "type": "Part-time"
+        }
       },
       {
         "company": "Instituto Federal de Roraima",
-        "role": "Scholarship Holder",
-        "type": "Part-time",
-        "period": "10 months"
+        "details": {
+          "period": "10 months",
+          "role": "Scholarship Holder",
+          "type": "Part-time"
+        }
       }
     ]
   },
