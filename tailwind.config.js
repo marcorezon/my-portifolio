@@ -26,9 +26,10 @@ module.exports = {
           transparent: "#33323229",
         },
         secondary: {
-          "silver": "#cfbebe",
-          "blue": "#1056b95c",
-          "lightBlue": " #0e99e9",
+          silver: "#cfbebe",
+          blue: "#1056b95c",
+          lightBlue: " #0e99e9",
+          translucidWhite: "#ffffffd4",
         },
       },
       fontFamily: {

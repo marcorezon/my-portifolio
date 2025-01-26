@@ -9,7 +9,7 @@ export function ExperienceItem({ company, logo, details }: Experience) {
       <div className="relative left-5">
         {Object.entries(details).map(([key, value]) => {
           return (
-            <li key={key}>
+            <li key={key} className="text-secondary-translucidWhite">
               {key.charAt(0).toUpperCase() + key.slice(1)}: {value}
             </li>
           );
