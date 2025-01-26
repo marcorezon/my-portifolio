@@ -12,6 +12,7 @@
     "experiences": [
       {
         "company": "Compass Texas AI/R",
+        "logo": "https://compass.uol/etc.clientlibs/compass/clientlibs/clientlib-react/resources/static/media/logo-v2.791c1870b78993eb40c410d0d56d9911.svg",
         "details": {
           "period": "5 months",
           "role": "Trainee Front-end Developer",
@@ -20,6 +21,7 @@
       },
       {
         "company": "Compass Uol AI/R",
+        "logo": "https://compass.uol/etc.clientlibs/compass/clientlibs/clientlib-react/resources/static/media/logo-v2.791c1870b78993eb40c410d0d56d9911.svg",
         "details": {
           "period": "2 months",
           "role": "Trainee Front-end Developer",
@@ -28,6 +30,7 @@
       },
       {
         "company": "Compass Uol AI/R",
+        "logo": "https://compass.uol/etc.clientlibs/compass/clientlibs/clientlib-react/resources/static/media/logo-v2.791c1870b78993eb40c410d0d56d9911.svg",
         "details": {
           "period": "6 months",
           "role": "Internship",
@@ -36,6 +39,7 @@
       },
       {
         "company": "Instituto Federal de Roraima",
+        "logo": "https://integra.ifrr.edu.br/img/logos/ifrr/logo-instituto.png",
         "details": {
           "period": "10 months",
           "role": "Scholarship Holder",

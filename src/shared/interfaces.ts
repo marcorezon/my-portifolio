@@ -12,5 +12,6 @@ export interface ExperienceDetais {
 
 export interface Experience {
   company: string;
+  logo: string;
   details: ExperienceDetais;
 }
