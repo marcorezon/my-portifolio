@@ -6,6 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import styles from "./ExperiencesDisplayer.module.css";
 import applicationData from "../../../data/applicationData.json";
+import { CarouselArrow } from "@/components/common/CarouselArrow/CarouselArrow";
 
 export function ExperiencesDisplayer() {
   const responsive = {
@@ -27,8 +28,8 @@ export function ExperiencesDisplayer() {
   };
 
   return (
-    <section className="w-[70%] m-auto">
-      <h2 className="text-2xl">Experiences</h2>
+    <section className="w-[70%] h-[400px]">
+      <h2 className="w-fit text-2xl mx-auto mb-8">Experiences</h2>
       <Carousel
         className={`"w-full" ${styles.container}`}
         swipeable={true}
@@ -37,7 +38,10 @@ export function ExperiencesDisplayer() {
         ssr={true}
         infinite={true}
         keyBoardControl={true}
+        customRightArrow={<CarouselArrow variant="right"/>}
+        customLeftArrow={<CarouselArrow variant="left"/>}
         removeArrowOnDeviceType={["tablet", "mobile"]}
+        containerClass="h-full overflow-y-scroll"
         itemClass="px-10">
         {applicationData.about_me.experiences.map((experience, index) => (
           <ExperienceItem key={index} {...experience} />
