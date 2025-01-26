@@ -3,18 +3,15 @@ import { Experience } from "@/shared/interfaces";
 
 export function ExperienceItem({ company, details }: Experience) {
   return (
-    <ul className="h-fit flex items-center justify-center bg-gradient-to-r from-primary-transparent to-secondary-blue cursor-pointer gap-2 rounded-lg p-5 hover:scale-105">
+    <ul className="w-[300px] h-[250px] flex flex-col items-start justify-center bg-gradient-to-r from-primary-transparent to-secondary-blue gap-2 rounded-lg p-5">
       <li className="text-lg">{company}</li>
-      {Object.entries(details)
-        .slice(0, 0)
-        .map(([key, value]) => {
-          return (
-            <li key={key}>
-              {key.charAt(0).toUpperCase() + key.slice(1)}: {value}
-            </li>
-          );
-        })}
-      <IconRetriever iconName="arrow-horizontal" width={24} height={24} />
+      {Object.entries(details).map(([key, value]) => {
+        return (
+          <li key={key}>
+            {key.charAt(0).toUpperCase() + key.slice(1)}: {value}
+          </li>
+        );
+      })}
     </ul>
   );
 }

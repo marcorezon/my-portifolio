@@ -18,8 +18,6 @@ export function ListHeaderItem({ title }: { title: string }) {
     logicalController.displayBottomStyle = bottomStyle;
   }
 
-  console.log("parhname=: ",pathname, "result: ", pathname.toLowerCase().includes(title))
-
   return (
     <Link
       href={formatRedirectPath(title)}
