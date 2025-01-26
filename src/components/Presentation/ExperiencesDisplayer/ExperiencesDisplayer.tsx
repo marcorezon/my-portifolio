@@ -44,7 +44,6 @@ export function ExperiencesDisplayer() {
           <CarouselArrow onClick={handleClick} variant="right" />
         }
         customLeftArrow={<CarouselArrow onClick={handleClick} variant="left" />}
-        removeArrowOnDeviceType={["tablet", "mobile"]}
         containerClass="h-full overflow-y-scroll"
         itemClass="px-10"
       >
