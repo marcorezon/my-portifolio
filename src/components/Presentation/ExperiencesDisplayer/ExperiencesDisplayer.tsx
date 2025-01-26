@@ -5,9 +5,9 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { CarouselArrow } from "@/components/common/CarouselArrow/CarouselArrow";
-import styles from "./ExperiencesDisplayer.module.css";
 import applicationData from "../../../data/applicationData.json";
 import { MouseEventHandler } from "react";
+
 const handleClick: MouseEventHandler<HTMLButtonElement> = (event) => {};
 
 export function ExperiencesDisplayer() {
@@ -30,10 +30,10 @@ export function ExperiencesDisplayer() {
   };
 
   return (
-    <section className="w-[70%] h-[400px]">
+    <section className="w-[70%] h-[400px] presentation">
       <h2 className="w-fit text-2xl mx-auto mb-8">Experiences</h2>
       <Carousel
-        className={`"w-full" ${styles.container}`}
+        className="w-full" 
         swipeable={true}
         draggable={true}
         responsive={responsive}
