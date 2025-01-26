@@ -4,9 +4,11 @@ import { ExperienceItem } from "./ExperienceItem/ExperienceItem";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import { CarouselArrow } from "@/components/common/CarouselArrow/CarouselArrow";
 import styles from "./ExperiencesDisplayer.module.css";
 import applicationData from "../../../data/applicationData.json";
-import { CarouselArrow } from "@/components/common/CarouselArrow/CarouselArrow";
+import { MouseEventHandler } from "react";
+const handleClick: MouseEventHandler<HTMLButtonElement> = (event) => {};
 
 export function ExperiencesDisplayer() {
   const responsive = {
@@ -36,13 +38,16 @@ export function ExperiencesDisplayer() {
         draggable={true}
         responsive={responsive}
         ssr={true}
-        infinite={true}
+        infinite={undefined}
         keyBoardControl={true}
-        customRightArrow={<CarouselArrow variant="right"/>}
-        customLeftArrow={<CarouselArrow variant="left"/>}
+        customRightArrow={
+          <CarouselArrow onClick={handleClick} variant="right" />
+        }
+        customLeftArrow={<CarouselArrow onClick={handleClick} variant="left" />}
         removeArrowOnDeviceType={["tablet", "mobile"]}
         containerClass="h-full overflow-y-scroll"
-        itemClass="px-10">
+        itemClass="px-10"
+      >
         {applicationData.about_me.experiences.map((experience, index) => (
           <ExperienceItem key={index} {...experience} />
         ))}
