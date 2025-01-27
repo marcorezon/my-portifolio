@@ -28,7 +28,9 @@ export function ProjectDisplayer({
         className="rounded-md"
         alt="Project image"
       />
-      <p className="text-sm text-secondary-silver">{project.subtitle}</p>
+      {!isFunctional && (
+        <p className="text-sm text-secondary-silver">{project.subtitle}</p>
+      )}
       <h4>{project.title}</h4>
       <hr />
       <div className="flex gap-4">
