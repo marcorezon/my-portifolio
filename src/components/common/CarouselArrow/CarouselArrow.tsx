@@ -11,7 +11,7 @@ export function CarouselArrow({ variant, onClick }: CarouselArrowProps) {
   return (
     <button
       onClick={onClick}
-      className={`absolute w-[43px] h-[43px] rounded-full bg-primary-transparent z-1001 top-2 ${positionVariant}`}
+      className={`absolute w-[43px] h-[43px] rounded-full bg-primary-transparent z-1001 top-[48%] ${positionVariant}`}
     >
       <IconRetriever
         style="m-auto"

@@ -15,25 +15,29 @@ export function ExperiencesDisplayer() {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
-      slidesToSlide: 1, // optional, default to 1.
+      slidesToSlide: 1,
     },
   };
 
   return (
-    <section className={`w-[70%] md:h-[400px] ${styles.presentation}`}>
+    <section
+      className={`w-[90%] md:h-[400px] ${styles.presentation}`}
+    >
       <h2 className="w-fit text-2xl mx-auto mb-8">Experiences</h2>
       <Carousel
         className="w-full"
+        containerClass="w-full h-full px-[max(8vw,_64px)]"
+        removeArrowOnDeviceType={"mobile, tablet"}
         swipeable={true}
         draggable={true}
         responsive={responsive}
@@ -42,13 +46,10 @@ export function ExperiencesDisplayer() {
         autoPlaySpeed={3000}
         ssr={true}
         keyBoardControl={true}
+        customLeftArrow={<CarouselArrow onClick={handleClick} variant="left" />}
         customRightArrow={
           <CarouselArrow onClick={handleClick} variant="right" />
         }
-        customLeftArrow={<CarouselArrow onClick={handleClick} variant="left" />}
-        containerClass="h-full overflow-y-scroll"
-        itemClass="px-10"
-        removeArrowOnDeviceType={"mobile"}
       >
         {applicationData.about_me.experiences.map((experience, index) => (
           <ExperienceItem key={index} {...experience} />

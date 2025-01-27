@@ -19,11 +19,7 @@ export function Header() {
       className={`fixed w-full h-[75px] flex items-center justify-evenly z-10 ${styles.glass}`}
     >
       <span className="text-lg flex gap-2 items-center">
-        <IconRetriever
-          iconName="coding"
-          width={24}
-          height={24}
-        />
+        <IconRetriever iconName="coding" width={24} height={24} />
         {applicationData.header.name}
       </span>
       <nav className="flex flex-row items-center justify-around xs:w-[70%] xl:w-[40%]">
