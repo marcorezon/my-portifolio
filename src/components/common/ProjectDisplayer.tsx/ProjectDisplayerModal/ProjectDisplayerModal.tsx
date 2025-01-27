@@ -10,16 +10,18 @@ export function ProjectDisplayerModal({
   handleClick: () => void;
 }) {
   return (
-    <div className="fixed top-0 w-[100vw] h-[100vh] flex items-center justify-center">
+    <div className="fixed w-[100vw] flex items-center justify-center md:top-0 md:h-full">
       <div
-        className={`w-[50vw] h-[50vh] flex flex-col gap-8 p-10 rounded-3xl ${styles.glass}`}
+        className={`relative w-[90vw] h-[calc(90svh-75px)] flex flex-col gap-8 p-10 rounded-3xl md:w-[50vw] md:h-[50vh] ${styles.glass}`}
       >
-        <BackButton handleClick={handleClick} style="self-end" />
-        {Object.entries(project).map(([key, value], index) => (
-          <li key={index}>
-            {key}: {value}
-          </li>
-        ))}
+          <BackButton handleClick={handleClick} style="self-end" />
+        <div className="overflow-y-scroll">
+          {Object.entries(project).map(([key, value], index) => (
+            <span key={index}>
+              {key}: {value}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
