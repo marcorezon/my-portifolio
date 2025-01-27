@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { ProjectProps } from "@/shared/interfaces";
 import { BackButton } from "../../BackButton/BackButton";
+import { IconRetriever } from "../../IconRetriever/IconRetriever";
 import styles from "../../../../styles/globalStyles.module.css";
 
 export function ProjectDisplayerModal({
@@ -14,7 +16,13 @@ export function ProjectDisplayerModal({
       <div
         className={`relative w-[90vw] h-[calc(90svh-75px)] flex flex-col gap-8 p-10 rounded-3xl md:w-[50vw] md:h-[50vh] ${styles.glass}`}
       >
-          <BackButton handleClick={handleClick} style="self-end" />
+        <span className="w-full flex items-center justify-between">
+          <BackButton handleClick={handleClick} style="self-start" />
+          <Link href="" className="flex gap-2">
+            Check it on GitHub
+            <IconRetriever iconName="github" />
+          </Link>
+        </span>
         <div className="overflow-y-scroll">
           {Object.entries(project).map(([key, value], index) => (
             <span key={index}>

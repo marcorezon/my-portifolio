@@ -13,7 +13,7 @@ export function BackButton({ style = "", handleClick }: BackButtonProps) {
       className={`relative w-[43px] h-[43px] rounded-full bg-primary-transparent z-30 hover:scale-110 ${style}`}
     >
       <IconRetriever
-        style="m-auto"
+        style="m-auto rotate-180"
         iconName="arrow-horizontal"
         width={32}
         height={32}
