@@ -2,14 +2,15 @@ import { MouseEventHandler } from "react";
 import { IconRetriever } from "../IconRetriever/IconRetriever";
 
 interface BackButtonProps {
+  style?: string;
   handleClick: MouseEventHandler<HTMLButtonElement>;
 }
 
-export function BackButton({ handleClick }: BackButtonProps) {
+export function BackButton({ style = "", handleClick }: BackButtonProps) {
   return (
     <button
       onClick={handleClick}
-      className="absolute w-[43px] h-[43px] rounded-full bg-primary-transparent z-1001 top-2"
+      className={`relative w-[43px] h-[43px] rounded-full bg-primary-transparent z-30 hover:scale-110 ${style}`}
     >
       <IconRetriever
         style="m-auto"
