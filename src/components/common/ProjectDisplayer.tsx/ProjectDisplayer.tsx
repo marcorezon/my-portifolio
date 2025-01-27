@@ -1,18 +1,21 @@
 import Image from "next/image";
 import { IconRetriever } from "../IconRetriever/IconRetriever";
-import { ProjectsProps } from "@/shared/interfaces";
+import { ProjectProps } from "@/shared/interfaces";
 
 export function ProjectDisplayer({
   project,
   isFunctional,
+  handleClick = null,
 }: {
-  project: ProjectsProps;
+  project: ProjectProps;
   isFunctional?: boolean;
+  handleClick?: ((project: ProjectProps) => void) | null;
 }) {
   const functionalStyle = "cursor-pointer m-5 hover:scale-[1.05]";
 
   return (
     <div
+      {...(handleClick ? { onClick: () => handleClick(project) } : {})}
       tabIndex={isFunctional ? 0 : -1}
       className={`relative flex flex-col w-[300px] min-h-[300px] bg-primary-transparent rounded-md p-3 gap-4 shadow-lg ${
         isFunctional ? functionalStyle : ""
@@ -25,9 +28,7 @@ export function ProjectDisplayer({
         className="rounded-md"
         alt="Project image"
       />
-      <p className="text-sm text-secondary-silver">
-        {project.subtitle}
-      </p>
+      <p className="text-sm text-secondary-silver">{project.subtitle}</p>
       <h4>{project.title}</h4>
       <hr />
       <div className="flex gap-4">

@@ -1,4 +1,4 @@
-export interface ProjectsProps {
+export interface ProjectProps {
   title: string;
   subtitle: string;
   technologies: string[];
