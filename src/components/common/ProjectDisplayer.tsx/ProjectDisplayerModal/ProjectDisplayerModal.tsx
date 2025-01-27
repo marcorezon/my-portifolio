@@ -18,7 +18,12 @@ export function ProjectDisplayerModal({
       >
         <span className="w-full flex items-center justify-between">
           <BackButton handleClick={handleClick} style="self-start" />
-          <Link href="" className="flex gap-2">
+          <Link
+            href="https://github.com/your-repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex gap-2"
+          >
             Check it on GitHub
             <IconRetriever iconName="github" />
           </Link>
