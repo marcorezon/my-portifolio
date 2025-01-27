@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { IconRetriever } from "../common/IconRetriever/IconRetriever";
 import { MobileHeader } from "./MobileHeader/MobileHeader";
 import { ListHeaderItem } from "./ListHeaderItem/ListHeaderItem";
 import { useScreenSize } from "@/hooks/useScreenSize";
@@ -19,9 +19,8 @@ export function Header() {
       className={`fixed w-full h-[75px] flex items-center justify-evenly z-10 ${styles.glass}`}
     >
       <span className="text-lg flex gap-2 items-center">
-        <Image
-          src="\images\codingLogo.svg"
-          alt="Coding icon"
+        <IconRetriever
+          iconName="coding"
           width={24}
           height={24}
         />

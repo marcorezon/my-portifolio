@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { IconRetriever } from "@/components/common/IconRetriever/IconRetriever";
 
 interface PresentationFooterItemProps {
   title: string;
@@ -16,10 +17,8 @@ export function PresentationFooterItem({
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Image
-        aria-hidden
-        src={path}
-        alt={`${title} icon`}
+      <IconRetriever
+        iconName={title}
         width={24}
         height={24}
       />
