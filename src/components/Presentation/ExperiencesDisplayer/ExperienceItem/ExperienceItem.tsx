@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function ExperienceItem({ company, logo, details }: Experience) {
   return (
-    <ul className="w-fit h-[250px] flex flex-col items-start justify-center gap-2 rounded-lg">
+    <ul className="w-fit h-[250px] flex flex-col items-start justify-center cursor-pointer gap-2 rounded-lg hover:scale-105">
       <Image src={logo} width={100} height={100} alt={`${company} logo`} />
       <li className="text-xl">{company}</li>
       <div className="relative left-5">
