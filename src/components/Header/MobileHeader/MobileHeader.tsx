@@ -1,6 +1,6 @@
 import { MobileHeaderItem } from "./MobileHeaderItem/MobileHeaderItem";
 import applicationData from "../../../data/applicationData.json";
-import styles from ".././Header.module.css";
+import styles from "../../../styles/globalStyles.module.css";
 
 export function MobileHeader() {
   return (

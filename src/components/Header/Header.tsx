@@ -5,7 +5,7 @@ import { MobileHeader } from "./MobileHeader/MobileHeader";
 import { ListHeaderItem } from "./ListHeaderItem/ListHeaderItem";
 import { useScreenSize } from "@/hooks/useScreenSize";
 import applicationData from "../../data/applicationData.json";
-import styles from "./Header.module.css";
+import styles from "../../styles/globalStyles.module.css";
 
 export function Header() {
   const screenSize = useScreenSize();
