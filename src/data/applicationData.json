@@ -9,7 +9,6 @@
       { "name": "Next.JS" },
       { "name": "HTML" },
       { "name": "CSS" }
-
     ],
     "text": "I am currently looking for a new oportunity, my inbox is aways open. Whether you have any question or just want to talk, i will try my best to get back to you!",
     "experiences": [
@@ -54,11 +53,11 @@
   "header": {
     "name": "Marco Rêzon",
     "options": [
-      { "title": "About me", "path": "/" },
-      { "title": "Projects", "path": "/" },
-      { "title": "Resume", "path": "/" },
-      { "title": "Contact", "path": "/" },
-      { "title": "Components", "path": "/" }
+      { "title": "About me" },
+      { "title": "Projects" },
+      { "title": "Resume" },
+      { "title": "Contact" },
+      { "title": "Components" }
     ]
   },
   "presentationFooter": {

@@ -1,15 +1,12 @@
-import Image from "next/image";
 import { IconRetriever } from "@/components/common/IconRetriever/IconRetriever";
 
-interface PresentationFooterItemProps {
+interface FooterItemProps {
   title: string;
-  path: string;
 }
 
-export function PresentationFooterItem({
+export function FooterItem({
   title,
-  path,
-}: PresentationFooterItemProps) {
+}: FooterItemProps) {
   return (
     <a
       className="flex items-center justify-center gap-1 hover:scale-105"

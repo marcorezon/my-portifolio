@@ -1,5 +1,4 @@
 import { AboutMe } from "./AboutMe/AboutMe";
-import { PresentationFooter } from "./PresentationFooter/PresentationFooter";
 import { PresentationArticle } from "./PresentationArticle/PresentationArticle";
 
 export function Presentation() {
@@ -7,7 +6,6 @@ export function Presentation() {
     <section className="w-full h-full flex flex-col items-center justify-center bg-transparent gap-20 lg:gap-0">
       <AboutMe />
       <PresentationArticle />
-      <PresentationFooter />
     </section>
   );
 }
