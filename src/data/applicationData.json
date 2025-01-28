@@ -56,9 +56,9 @@
     "options": [
       { "title": "About me", "path": "/" },
       { "title": "Projects", "path": "/" },
-      { "title": "Components", "path": "/" },
       { "title": "Resume", "path": "/" },
-      { "title": "Contact", "path": "/" }
+      { "title": "Contact", "path": "/" },
+      { "title": "Components", "path": "/" }
     ]
   },
   "presentationFooter": {
