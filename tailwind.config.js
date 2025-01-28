@@ -43,6 +43,11 @@ module.exports = {
         ".blueGradient": {
           backgroundImage: "linear-gradient(to right, #1056b95c, #0e99e9)",
         },
+        ".textBlueGradient": {
+          backgroundImage: "linear-gradient(90deg, rgba(255,255,255,1) 16%, rgb(147, 206, 255) 50%)",
+          "-webkit-text-fill-color": "transparent", 
+          "-webkit-background-clip": "text",
+        }
       };
       addUtilities(newUtilities, ["responsive", "hover"]);
     },

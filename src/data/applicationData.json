@@ -1,5 +1,6 @@
 {
   "about_me": {
+    "firstName": "Marco",
     "initial_message": "Hi!",
     "role": "Front-end Developer",
     "technologies": [
