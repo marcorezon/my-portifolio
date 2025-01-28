@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Signika_Negative } from "next/font/google";
-import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { BackgroundGradient } from "@/components/common/BackgroundGradient.tsx/BackgroundGradient";
+import "./globals.css";
 
-const signika_negative = Signika_Negative({
-  variable: "--font-pt-sans-narrow",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "About me | Marco",
@@ -20,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${signika_negative.variable}`}>
+    <html lang="en">
       <body>
         <Header />
         <BackgroundGradient />
