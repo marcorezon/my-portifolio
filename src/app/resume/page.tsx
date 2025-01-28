@@ -2,7 +2,7 @@ import { ExperiencesDisplayer } from "@/components/Resume/ExperiencesDisplayer/E
 
 export default function Resume() {
     return (
-      <div>
+      <div className=" flex flex-col items-center justify-center">
           <h1>Resume</h1>
           <ExperiencesDisplayer />
       </div>
