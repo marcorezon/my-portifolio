@@ -4,6 +4,10 @@
   animation-range: cover 0% cover 40%;
 }
 
+.arise {
+  animation: appear 2s ease 0s;
+}
+
 .glass {
   background: linear-gradient(
     135deg,
@@ -26,6 +30,7 @@
     transform: scale(1);
   }
 }
+
 
 @media screen and (max-width: 640px) {
   .glass {

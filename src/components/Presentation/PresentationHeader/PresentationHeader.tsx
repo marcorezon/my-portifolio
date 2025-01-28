@@ -1,8 +1,9 @@
 import applicationData from "../../../data/applicationData.json";
+import styles from "../../../styles/globalStyles.module.css"
 
 export function PresentationHeader() {
   return (
-    <div className="h-screen flex flex-col font-bold text-center">
+    <div className={`h-screen flex flex-col font-bold text-center ${styles.arise}`}>
       <h1 className="m-auto flex flex-col">
         <span className="m-auto">
           My name is {applicationData.about_me.firstName}
