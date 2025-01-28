@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IconRetriever } from "@/components/common/IconRetriever/IconRetriever";
 import formatRedirectPath from "@/shared/functions/formatRedirectPath";
 
 export function ListHeaderItem({ title }: { title: string }) {
@@ -21,17 +20,10 @@ export function ListHeaderItem({ title }: { title: string }) {
   return (
     <Link
       href={formatRedirectPath(title)}
-      className={`relative w-full flex items-center justify-center py-2 gap-2 rounded-3xl text-lg text-center cursor-pointer hover:bg-primary-transparent 
+      className={`relative w-full flex items-center justify-center py-2 gap-2 rounded-3xl text-md text-center cursor-pointer hover:bg-primary-transparent 
         ${logicalController.displayBottomStyle}
       `}
     >
-      <IconRetriever
-        iconName={title}
-        style="[&_path]:stroke-[#ffffff]"
-        width={25}
-        height={25}
-        pathVariant="headerIcons\"
-      />
       <span>{title}</span>
     </Link>
   );

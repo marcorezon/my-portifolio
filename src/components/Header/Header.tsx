@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <div
-      className={`fixed w-full h-[75px] flex items-center justify-evenly z-10 ${styles.glass}`}
+      className={`fixed w-full h-[75px] flex items-center justify-around z-10 ${styles.glass}`}
     >
       <span className="text-lg flex gap-2 items-center">
         <IconRetriever iconName="coding" width={24} height={24} />
