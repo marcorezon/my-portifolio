@@ -1,8 +1,7 @@
 {
   "about_me": {
     "firstName": "Marco",
-    "initial_message": "Hi!",
-    "role": "Front-end Developer",
+    "role": "Welcome to My Portifolio",
     "technologies": [
       { "name": "React" },
       { "name": "Typescript" },
@@ -11,7 +10,7 @@
       { "name": "HTML" },
       { "name": "CSS" }
     ],
-    "text": "I am currently looking for a new oportunity, my inbox is aways open. Whether you have any question or just want to talk, i will try my best to get back to you!",
+    "text": "Hi! I am a junior front-end developer with over a year of experience building websites. I am currently looking for a new oportunity, my inbox is aways open. Whether you have any question or just want to talk, i will try my best to get back to you!",
     "experiences": [
       {
         "company": "Compass Texas AI/R",

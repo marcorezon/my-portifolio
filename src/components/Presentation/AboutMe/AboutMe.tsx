@@ -18,7 +18,7 @@ export function AboutMe() {
         className="rounded-full"
       />
       <div className="min-h-full flex flex-col gap-[4vh] px-8 lg:w-1/3">
-        <p>
+        <p className="text-lg">
           <span>{applicationData.about_me.text}</span>
         </p>
 
