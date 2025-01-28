@@ -37,5 +37,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".blueGradient": {
+          backgroundImage: "linear-gradient(to right, #1056b95c, #0e99e9)",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
