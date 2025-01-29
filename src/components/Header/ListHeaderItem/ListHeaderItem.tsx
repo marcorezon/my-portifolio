@@ -9,7 +9,7 @@ export function ListHeaderItem({ title }: { title: string }) {
 
   const logicalController = { displayBottomStyle: "", borderFormat: null };
   const bottomStyle =
-    "before:absolute before:bottom-1 before:h-1 before:min-w-[3rem] before:rounded-md before:blueGradient";
+    "before:absolute before:bottom-0 before:h-1 before:min-w-[2rem] before:rounded-md before:blueGradient";
 
   if (pathname.length === 1 && title === "About me") {
     logicalController.displayBottomStyle = bottomStyle;
@@ -20,7 +20,7 @@ export function ListHeaderItem({ title }: { title: string }) {
   return (
     <Link
       href={formatRedirectPath(title)}
-      className={`relative w-full flex items-center justify-center py-2 gap-2 rounded-3xl text-md text-center cursor-pointer hover:bg-primary-transparent 
+      className={`relative w-full flex items-center justify-center py-2 gap-2 rounded-3xl text-sm text-center cursor-pointer hover:bg-primary-transparent 
         ${logicalController.displayBottomStyle}
       `}
     >
