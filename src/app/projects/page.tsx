@@ -1,7 +1,7 @@
 "use client";
 
-import { ProjectDisplayer } from "@/components/common/ProjectDisplayer.tsx/ProjectDisplayer";
-import { ProjectDisplayerModal } from "@/components/common/ProjectDisplayer.tsx/ProjectDisplayerModal/ProjectDisplayerModal";
+import { ProjectDisplayer } from "@/components/common/ProjectDisplayer/ProjectDisplayer";
+import { ProjectDisplayerModal } from "@/components/common/ProjectDisplayer/ProjectDisplayerModal/ProjectDisplayerModal";
 import applicationData from "../../data/applicationData.json";
 import { useReducer } from "react";
 import { ProjectProps } from "@/shared/interfaces";

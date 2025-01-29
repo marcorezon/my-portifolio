@@ -20,16 +20,13 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          white: "#ffffff",
-          dark: "#0a0a0a",
-          lightGrey: "#3332328a",
-          transparent: "#33323229",
+          white: " #ffffff",
+          dark: " #0a0a0a",
+          grey: " #cfbebe",
+          lightGrey: " #3332328a",
+          transparent: "rgba(138, 138, 138, 0.29)",
         },
         secondary: {
-          silver: "#cfbebe",
-          blue: "#1056b95c",
-          lightBlue: " #0e99e9",
-          translucidWhite: "#ffffffd4",
         },
       },
       fontFamily: {
@@ -37,19 +34,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        ".blueGradient": {
-          backgroundImage: "linear-gradient(to right, #1056b95c, #0e99e9)",
-        },
-        ".textBlueGradient": {
-          backgroundImage: "linear-gradient(90deg, rgba(255,255,255,1) 16%, rgb(147, 206, 255) 50%)",
-          "-webkit-text-fill-color": "transparent", 
-          "-webkit-background-clip": "text",
-        }
-      };
-      addUtilities(newUtilities, ["responsive", "hover"]);
-    },
-  ],
+  plugins: [],
 };

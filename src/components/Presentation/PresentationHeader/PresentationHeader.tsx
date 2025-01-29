@@ -10,7 +10,7 @@ export function PresentationHeader() {
         <span className="m-auto">
           My name is {applicationData.about_me.firstName}
         </span>
-        <span className="xs:text-[8vw] xl:text-[3vw] textBlueGradient">
+        <span className="xs:text-[8vw] xl:text-[3vw] textbg-white">
           {applicationData.about_me.role}
         </span>
       </h1>

@@ -29,7 +29,7 @@ export function ProjectDisplayer({
         alt="Project image"
       />
       {!isFunctional && (
-        <p className="text-sm text-secondary-silver">{project.subtitle}</p>
+        <p className="text-sm text-primary-grey">{project.subtitle}</p>
       )}
       <h4>{project.title}</h4>
       <hr />

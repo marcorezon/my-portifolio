@@ -1,5 +1,5 @@
 import { Article } from "@/components/common/Article/Article";
-import { ProjectDisplayer } from "@/components/common/ProjectDisplayer.tsx/ProjectDisplayer";
+import { ProjectDisplayer } from "@/components/common/ProjectDisplayer/ProjectDisplayer";
 import styles from "../../../styles/globalStyles.module.css";
 import applicationData from "../../../data/applicationData.json";
 import { ProjectProps } from "@/shared/interfaces";
