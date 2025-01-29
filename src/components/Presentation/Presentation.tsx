@@ -1,6 +1,7 @@
 import { PresentationHeader } from "./PresentationHeader/PresentationHeader";
 import { ProjectsCarousel } from "./ProjectsCarousel/ProjectsCarousel";
 import { AboutMe } from "./AboutMe/AboutMe";
+import { Experiences } from "./Experiences/Experiences";
 
 export function Presentation() {
   return (
@@ -8,6 +9,7 @@ export function Presentation() {
       <PresentationHeader />
       <ProjectsCarousel />
       <AboutMe />
+      <Experiences />
     </section>
   );
 }
