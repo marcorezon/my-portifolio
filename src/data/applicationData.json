@@ -14,7 +14,7 @@
     "experiences": [
       {
         "company": "Compass Texas AI/R",
-        "logo": "https://compass.uol/etc.clientlibs/compass/clientlibs/clientlib-react/resources/static/media/logo-v2.791c1870b78993eb40c410d0d56d9911.svg",
+        "logo": "https://compass.uol/content/aircompanycompass/en/home.coreimg.png/structure/jcr%3acontent/root/header_copy/logoImg/1737576379917/logo-desktop.png",
         "details": {
           "period": "5 months",
           "role": "Trainee Front-end Developer",
@@ -23,7 +23,7 @@
       },
       {
         "company": "Compass Uol AI/R",
-        "logo": "https://compass.uol/etc.clientlibs/compass/clientlibs/clientlib-react/resources/static/media/logo-v2.791c1870b78993eb40c410d0d56d9911.svg",
+        "logo": "https://compass.uol/content/aircompanycompass/en/home.coreimg.png/structure/jcr%3acontent/root/header_copy/logoImg/1737576379917/logo-desktop.png",
         "details": {
           "period": "2 months",
           "role": "Trainee Front-end Developer",
@@ -32,7 +32,7 @@
       },
       {
         "company": "Compass Uol AI/R",
-        "logo": "https://compass.uol/etc.clientlibs/compass/clientlibs/clientlib-react/resources/static/media/logo-v2.791c1870b78993eb40c410d0d56d9911.svg",
+        "logo": "https://compass.uol/content/aircompanycompass/en/home.coreimg.png/structure/jcr%3acontent/root/header_copy/logoImg/1737576379917/logo-desktop.png",
         "details": {
           "period": "6 months",
           "role": "Internship",
@@ -55,7 +55,6 @@
     "options": [
       { "title": "About me" },
       { "title": "Projects" },
-      { "title": "Resume" },
       { "title": "Contact" },
       { "title": "Components" }
     ]
