@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header/Header";
-import { Footer } from "@/components/Footer/Footer";
 import "./globals.css";
 
 
@@ -19,7 +18,6 @@ export default function RootLayout({
       <body className="xs:pb-[110px] md:pb-[35px] bg-black">
         <Header />
         <div className="w-full min-h-full xs:pb-[50px] md:pt-[75px]">{children}</div>
-        <Footer />
       </body>
     </html>
   );

@@ -57,6 +57,13 @@
       { "title": "Projects" },
       { "title": "Contact" },
       { "title": "Components" }
+    ],
+    "buttons": [
+      { "text": "GitHub", "path": "https://github.com/marcorezon/" },
+      {
+        "text": "LinkedIn",
+        "path": "www.linkedin.com/in/marco-rezon-4770b1222"
+      }
     ]
   },
   "presentationFooter": {
@@ -93,7 +100,7 @@
     }
   ],
   "contact": {
-    "E-mail": "marcorezonmoura1@gmail.com",    
+    "E-mail": "marcorezonmoura1@gmail.com",
     "Phone number": "+51 95 99855-3887",
     "LinkedIn": "",
     "GitHub": ""

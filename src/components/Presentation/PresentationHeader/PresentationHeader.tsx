@@ -1,12 +1,13 @@
+import { LinkButton } from "@/components/common/LinkButton/LinkButton";
 import applicationData from "../../../data/applicationData.json";
 import styles from "../../../styles/globalStyles.module.css";
 
 export function PresentationHeader() {
   return (
     <div
-      className={`h-screen flex flex-col font-bold text-center ${styles.arise}`}
+      className={`h-screen flex flex-col justify-center gap-[5vh] font-bold text-center ${styles.arise}`}
     >
-      <h1 className="m-auto flex flex-col">
+      <h1 className="flex flex-col">
         <span className="m-auto">
           My name is {applicationData.about_me.firstName}
         </span>
@@ -14,6 +15,17 @@ export function PresentationHeader() {
           {applicationData.about_me.role}
         </span>
       </h1>
+      <div className="flex gap-10">
+        {applicationData.header.buttons.map((buttonItem, index) => (
+          <LinkButton
+            key={index}
+            path={buttonItem.path}
+            text={buttonItem.text}
+            iconName={buttonItem.text}
+            isExternal
+          />
+        ))}
+      </div>
     </div>
   );
 }
