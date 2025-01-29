@@ -91,5 +91,11 @@
       "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       "technologies": ["React", "Javascript", "Typescript", "Next.JS"]
     }
-  ]
+  ],
+  "contact": {
+    "E-mail": "marcorezonmoura1@gmail.com",    
+    "Phone number": "+51 95 99855-3887",
+    "LinkedIn": "",
+    "GitHub": ""
+  }
 }
