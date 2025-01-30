@@ -21,10 +21,12 @@ export function LinkButton({
       href={path}
       target={isExternal ? "_blank" : "_self"}
       rel={isExternal ? "noopener noreferrer" : ""}
-      className="w-fit h-fit flex justify-center items-center bg-primary-white cursor-pointer p-5 rounded-full hover:scale-105"
+      className="w-fit h-fit flex justify-center items-center border border-primary-white cursor-pointer gap-2 p-4 rounded-full hover:scale-105"
     >
-      {iconName !== null && <IconRetriever iconName={iconName} />}
-      <span className="text-primary-dark">{text}</span>
+      {iconName !== null && (
+        <IconRetriever iconName={iconName} width={24} height={24} />
+      )}
+      <span>{text}</span>
     </Link>
   );
 }
