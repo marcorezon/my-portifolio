@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { LinkButton } from "@/components/common/LinkButton/LinkButton";
 import { ProjectProps } from "@/shared/interfaces";
-import Image from "next/image";
 
 export function ProjectCarouselItem(project: ProjectProps) {
   return (

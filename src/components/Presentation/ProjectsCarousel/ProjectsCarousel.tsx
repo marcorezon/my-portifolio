@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import applicationData from "../../../data/applicationData.json";
 import { CarouselArrow } from "@/components/common/CarouselArrow/CarouselArrow";
 import { ProjectCarouselItem } from "./ProjectCarouselItem/ProjectCarouselItem";
+import styles from "../../../styles/globalStyles.module.css";
 
 const responsive = {
   desktop: {
@@ -28,7 +29,7 @@ export function ProjectsCarousel() {
   const handleClick = () => {};
 
   return (
-    <div className="w-[90vw] h-full flex flex-col">
+    <div className={`w-[90vw] h-full flex flex-col ${styles.presentation}`}>
       <h3 className="self-center mb-10">Projects</h3>
       <Carousel
         containerClass="h-full px-[max(8vw,_64px)]"
