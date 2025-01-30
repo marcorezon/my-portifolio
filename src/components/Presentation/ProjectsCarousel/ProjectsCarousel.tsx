@@ -2,9 +2,9 @@
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Image from "next/image";
 import applicationData from "../../../data/applicationData.json";
 import { CarouselArrow } from "@/components/common/CarouselArrow/CarouselArrow";
+import { ProjectCarouselItem } from "./ProjectCarouselItem/ProjectCarouselItem";
 
 const responsive = {
   desktop: {
@@ -29,7 +29,7 @@ export function ProjectsCarousel() {
 
   return (
     <div className="w-[90vw] h-full flex flex-col">
-      <h3 className="self-center">Projects</h3>
+      <h3 className="self-center mb-10">Projects</h3>
       <Carousel
         containerClass="h-full px-[max(8vw,_64px)]"
         removeArrowOnDeviceType={["mobile", "tablet"]}
@@ -45,18 +45,7 @@ export function ProjectsCarousel() {
         }
       >
         {applicationData.projects.map((project, index) => (
-          <div
-            key={index}
-            className="w-fit h-[320px] overflow-hidden rounded-3xl"
-          >
-            <Image
-              src="https://th.bing.com/th/id/OIG1.CgTbIrO0vUXLNU28HMdC"
-              height={300}
-              width={640}
-              objectFit="cover"
-              alt="Project image"
-            />
-          </div>
+          <ProjectCarouselItem key={index} {...project} />
         ))}
       </Carousel>
     </div>
