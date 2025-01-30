@@ -1,33 +1,30 @@
+import Image from "next/image";
 import applicationData from "../../../data/applicationData.json";
+import exp from "constants";
 
 export function Experiences() {
   return (
     <section className="w-full flex flex-col items-center justify-center py-[10vh]">
-      <h4>Work experiences</h4>
-      <br />
-      <table className="w-2/3">
-        <tbody>
-          {applicationData.about_me.experiences.map((experience, index) => (
-            <tr
-              key={index}
-              className="flex justify-start items-center gap-10 md:text-2xl font-400 border-t border-primary-white"
-            >
-              <td className="py-5">
-                <span>{experience.details.period}</span>
-              </td>
-              <td className="flex">
-                <span>{experience.company}</span>
-              </td>
-              <td>
-                <span>{experience.details.role}</span>
-              </td>
-              <td>
-                <span>{experience.details.type}</span>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <h4>Experience</h4>
+      <div className="w-fit flex flex-col justify-start gap-7">
+        {applicationData.about_me.experiences.map((experience, index) => (
+          <div key={index} className="flex items-center justify-start gap-5 items-start">
+            <Image
+              src={experience.logo}
+              alt={`${experience.company} logo`}
+              width={30}
+              height={30}
+            />
+            <div className="flex flex-col justify-start">
+              <span className="text-lg">{experience.details.role}</span>
+              <span>
+                {experience.company} {experience.details.type}
+              </span>
+              <span>{experience.details.period}</span>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 }
