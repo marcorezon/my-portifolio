@@ -26,13 +26,22 @@ module.exports = {
           lightGrey: " #3332328a",
           transparent: "rgba(138, 138, 138, 0.29)",
         },
-        secondary: {
-        },
+        secondary: {},
       },
       fontFamily: {
         manrope: ["var(--font-family-manrope)"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".toDarkGradient": {
+          backgroundImage:
+            "linear-gradient(to right, #00000000 0%, #000000 100%)",
+        },
+      };
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };
