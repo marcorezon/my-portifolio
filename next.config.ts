@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'th.bing.com',
+        hostname: 'private-user-images.githubusercontent.com',
         port: '',
         pathname: '/**',
       },
