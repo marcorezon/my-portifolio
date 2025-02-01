@@ -4,24 +4,27 @@ import exp from "constants";
 
 export function Experiences() {
   return (
-    <section className="w-full flex flex-col items-center justify-center py-[10vh]">
+    <section className="w-full flex flex-col items-center justify-center">
       <h4>Experience</h4>
-      <div className="w-fit flex flex-col justify-start gap-7">
+      <div className="w-full flex flex-col justify-start gap-7 p-[10vh]">
         {applicationData.about_me.experiences.map((experience, index) => (
-          <div key={index} className="flex items-center justify-start gap-5 items-start">
+          <div
+            key={index}
+            className="flex items-center justify-start items-start border-b border-primary-transparent py-3 gap-5 "
+          >
             <Image
               src={experience.logo}
               alt={`${experience.company} logo`}
               width={70}
               height={70}
               objectFit="cover"
+              className="rounded-lg"
             />
             <div className="flex flex-col justify-start">
-              <span className="text-lg text-primary-dark">{experience.details.role}</span>
-              <span className="text-primary-dark">
-                {experience.company} {experience.details.type}
-              </span >
-              <span className="text-primary-dark">{experience.details.period}</span>
+              <span>{experience.details.role}</span>
+              <span>{experience.company}</span>
+              <span>{experience.details.period}</span>
+              <span>• {experience.details.type}</span>
             </div>
           </div>
         ))}

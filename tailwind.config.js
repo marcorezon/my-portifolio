@@ -24,7 +24,7 @@ module.exports = {
           dark: " #000000e6",
           grey: "rgb(209, 207, 207)",
           lightGrey: " #3332328a",
-          transparent: "rgba(37, 37, 37, 0.65)",
+          transparent: "rgba(37, 37, 37, 0.2)",
         },
         secondary: {},
       },
