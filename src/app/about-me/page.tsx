@@ -7,9 +7,9 @@ export default function About() {
   return (
     <div className="max-w-[1200px] h-full flex flex-col items-center justify-center bg-primary-transparent gap-[5vh] m-auto">
       <AboutMe />
-      <ContactInfo />
       <Education />
       <Experiences />
+      <ContactInfo />
     </div>
   );
 }
