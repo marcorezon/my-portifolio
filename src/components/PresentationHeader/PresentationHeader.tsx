@@ -5,13 +5,13 @@ import styles from "../../styles/globalStyles.module.css";
 export function PresentationHeader() {
   return (
     <div
-      className={`h-full flex flex-col justify-center gap-[5vh] font-bold text-center ${styles.arise}`}
+      className={`h-full flexColCentered font-bold gap-[5vh] px-3 text-center ${styles.arise}`}
     >
       <h1 className="flex flex-col">
         <span className="m-auto">
           My name is {applicationData.about_me.firstName}
         </span>
-        <span className="xs:text-[8vw] xl:text-[3vw] textbg-white">
+        <span className="xs:text-[11vw] md:text-[5vw] xl:text-[3vw]">
           {applicationData.about_me.role}
         </span>
       </h1>
