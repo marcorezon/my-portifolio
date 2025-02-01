@@ -23,7 +23,6 @@ export function PresentationHeader() {
             text={buttonItem.text}
             iconName={buttonItem.text}
             isExternal
-            colorVariant="inverted"
           />
         ))}
       </div>

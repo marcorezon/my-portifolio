@@ -19,12 +19,12 @@ export function LinkButton({
   style = "",
 }: LinkButtonProps) {
   const colorVariantControler = {
-    containerStyle: "border border-primary-white",
+    containerStyle: "border-2 border-primary-white",
     textStyle: "",
   };
 
   if (colorVariant === "inverted") {
-    colorVariantControler.containerStyle = "bg-primary-white";
+    colorVariantControler.containerStyle = "bg-primary-dark";
     colorVariantControler.textStyle = "text-primary-dark";
   }
 
