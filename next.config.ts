@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'compass.uol',
+        hostname: 'logospng.org',
         port: '',
         pathname: '/**',
       },

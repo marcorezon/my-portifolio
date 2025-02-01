@@ -12,8 +12,9 @@ export function Experiences() {
             <Image
               src={experience.logo}
               alt={`${experience.company} logo`}
-              width={30}
-              height={30}
+              width={70}
+              height={70}
+              objectFit="cover"
             />
             <div className="flex flex-col justify-start">
               <span className="text-lg">{experience.details.role}</span>
