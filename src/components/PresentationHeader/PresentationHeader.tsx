@@ -5,7 +5,7 @@ import styles from "../../styles/globalStyles.module.css";
 export function PresentationHeader() {
   return (
     <div
-      className={`h-screen flex flex-col justify-center gap-[5vh] font-bold text-center ${styles.arise}`}
+      className={`h-full flex flex-col justify-center gap-[5vh] font-bold text-center ${styles.arise}`}
     >
       <h1 className="flex flex-col">
         <span className="m-auto">

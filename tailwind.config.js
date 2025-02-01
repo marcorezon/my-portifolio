@@ -40,6 +40,9 @@ module.exports = {
           backgroundImage:
             "linear-gradient(to right, #00000000 0%, #000000 100%)",
         },
+        ".fullScreen": {
+          height: "calc(100vh - 75px)"
+        }
       };
       addUtilities(newUtilities, ["responsive", "hover"]);
     },
