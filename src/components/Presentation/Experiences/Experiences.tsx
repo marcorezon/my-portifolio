@@ -17,11 +17,11 @@ export function Experiences() {
               objectFit="cover"
             />
             <div className="flex flex-col justify-start">
-              <span className="text-lg">{experience.details.role}</span>
-              <span>
+              <span className="text-lg text-primary-dark">{experience.details.role}</span>
+              <span className="text-primary-dark">
                 {experience.company} {experience.details.type}
-              </span>
-              <span>{experience.details.period}</span>
+              </span >
+              <span className="text-primary-dark">{experience.details.period}</span>
             </div>
           </div>
         ))}

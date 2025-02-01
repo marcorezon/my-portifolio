@@ -14,7 +14,7 @@
     "experiences": [
       {
         "company": "Compass Texas AI/R",
-        "logo": "https://logospng.org/download/compasso-uol/compasso-uol-4096.png",
+        "logo": "/images/companies/compass.png",
         "details": {
           "period": "5 months",
           "role": "Trainee Front-end Developer",
@@ -23,7 +23,7 @@
       },
       {
         "company": "Compass Uol AI/R",
-        "logo": "https://logospng.org/download/compasso-uol/compasso-uol-4096.png",
+        "logo": "/images/companies/compass.png",
         "details": {
           "period": "2 months",
           "role": "Trainee Front-end Developer",
@@ -32,7 +32,7 @@
       },
       {
         "company": "Compass Uol AI/R",
-        "logo": "https://logospng.org/download/compasso-uol/compasso-uol-4096.png",
+        "logo": "/images/companies/compass.png",
         "details": {
           "period": "6 months",
           "role": "Internship",
@@ -41,7 +41,7 @@
       },
       {
         "company": "Instituto Federal de Roraima",
-        "logo": "https://integra.ifrr.edu.br/img/logos/ifrr/logo-instituto.png",
+        "logo": "/images/companies/ifrr.png",
         "details": {
           "period": "10 months",
           "role": "Scholarship Holder",
@@ -68,8 +68,8 @@
   },
   "presentationFooter": {
     "items": [
-      { "title": "Github", "path": "\\images\\githubLogo.svg" },
-      { "title": "LinkedIn", "path": "\\images\\linkedInBlackLogo.wine.svg" }
+      { "title": "Github", "path": "/images/githubLogo.svg" },
+      { "title": "LinkedIn", "path": "/images/linkedInBlackLogo.wine.svg" }
     ]
   },
   "projects": [
