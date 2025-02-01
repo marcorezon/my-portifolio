@@ -5,7 +5,7 @@ import styles from "../../../styles/globalStyles.module.css";
 export function PresentationHeader() {
   return (
     <div
-      className={`h-[70vh] flex flex-col justify-center gap-[5vh] font-bold text-center ${styles.arise}`}
+      className={`h-screen flex flex-col justify-center gap-[5vh] font-bold text-center ${styles.arise}`}
     >
       <h1 className="flex flex-col">
         <span className="m-auto">
@@ -23,6 +23,7 @@ export function PresentationHeader() {
             text={buttonItem.text}
             iconName={buttonItem.text}
             isExternal
+            colorVariant="inverted"
           />
         ))}
       </div>

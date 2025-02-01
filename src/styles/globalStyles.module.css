@@ -11,8 +11,8 @@
 .glass {
   background: linear-gradient(
     135deg,
-    rgba(34, 34, 34, 0.884),
-    rgb(10, 10, 10)
+    rgba(66, 66, 66, 0),
+    rgba(0, 0, 0, 0.322)
   );
   backdrop-filter: blur(60px);
   -webkit-backdrop-filter: blur(10px);
