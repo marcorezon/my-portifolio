@@ -13,7 +13,7 @@ export function ListHeaderItem({ title }: { title: string }) {
 
   if (pathname.length === 1 && title === "Home") {
     logicalController.displayBottomStyle = bottomStyle;
-  } else if (pathname.includes(title.toLowerCase())) {
+  } else if (pathname.includes(title.replace(" ", "-").toLowerCase())) {
     logicalController.displayBottomStyle = bottomStyle;
   }
 

@@ -10,9 +10,9 @@ export function MobileHeaderItem({ title }: { title: string }) {
   const bottomStyle =
     "before:absolute before:bottom-2 before:h-1 before:min-w-[3rem] before:rounded-md before:bg-white";
 
-  if (pathname.length === 1 && title === "About me") {
+  if (pathname.length === 1 && title === "Home") {
     logicalController.displayBottomStyle = bottomStyle;
-  } else if (pathname.includes(title.toLowerCase())) {
+  } else if (pathname.includes(title.replace(" ", "-").toLowerCase())) {
     logicalController.displayBottomStyle = bottomStyle;
   }
 

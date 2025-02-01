@@ -5,7 +5,7 @@ import styles from "../../../styles/globalStyles.module.css";
 export function MobileHeader() {
   return (
     <div
-      className={`fixed w-full h-[75px] bottom-0 flex items-center z-10 border-0 ${styles.glass}`}
+      className={`fixed w-full h-[75px] top-0 flex items-center z-10 border-0 ${styles.glass}`}
     >
       <nav className="flex flex-row justify-around w-full">
         {applicationData.header.options.slice(0,3).map(
