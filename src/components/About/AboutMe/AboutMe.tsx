@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ContactInfo } from "../ContactInfo/ContactInfo";
-import { StacksDisplater } from "./StacksDisplayer/StacksDisplayer";
 import applicationData from "../../../data/applicationData.json";
 
 export function AboutMe() {
@@ -32,7 +31,6 @@ export function AboutMe() {
           </span>
         </div>
       </div>
-      <StacksDisplater />
     </section>
   );
 }

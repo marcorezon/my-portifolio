@@ -1,6 +1,7 @@
 import { AboutMe } from "@/components/About/AboutMe/AboutMe";
 import { Education } from "@/components/About/Education/Education";
 import { Experiences } from "@/components/About/Experiences/Experiences";
+import { StacksDisplayer } from "@/components/About/AboutMe/StacksDisplayer/StacksDisplayer";
 
 export default function About() {
   return (
@@ -8,6 +9,7 @@ export default function About() {
       <AboutMe />
       <Education />
       <Experiences />
+      <StacksDisplayer />
     </div>
   );
 }
