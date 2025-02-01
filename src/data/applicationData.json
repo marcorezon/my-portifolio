@@ -53,10 +53,11 @@
   "header": {
     "name": "Marco Rêzon",
     "options": [
+      { "title": "Home" },
       { "title": "About me" },
       { "title": "Projects" },
-      { "title": "Contact" },
       { "title": "Components" }
+
     ],
     "buttons": [
       { "text": "GitHub", "path": "https://github.com/marcorezon/" },

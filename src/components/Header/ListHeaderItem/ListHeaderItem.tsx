@@ -11,7 +11,7 @@ export function ListHeaderItem({ title }: { title: string }) {
   const bottomStyle =
     "before:absolute before:bottom-0 before:h-1 before:min-w-[2rem] before:rounded-md before:bg-white";
 
-  if (pathname.length === 1 && title === "About me") {
+  if (pathname.length === 1 && title === "Home") {
     logicalController.displayBottomStyle = bottomStyle;
   } else if (pathname.includes(title.toLowerCase())) {
     logicalController.displayBottomStyle = bottomStyle;

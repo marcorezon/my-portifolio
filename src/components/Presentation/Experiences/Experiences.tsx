@@ -1,6 +1,5 @@
 import Image from "next/image";
 import applicationData from "../../../data/applicationData.json";
-import exp from "constants";
 
 export function Experiences() {
   return (
