@@ -11,6 +11,17 @@
       { "name": "CSS" }
     ],
     "text": "Hi! I am a junior front-end developer with over a year of experience building websites. I am currently looking for a new oportunity, my inbox is aways open. Whether you have any question or just want to talk, i will try my best to get back to you!",
+
+    "education": [
+      {
+        "institution": "Instituto Federal de Roraima",
+        "identification": "Systems Analysis and Development",
+        "logo": "/images/companies/ifrr.png",
+        "degree": "Associate Degree",
+        "end date": "2026",
+        "start date": "2023"
+      }
+    ],
     "experiences": [
       {
         "company": "Compass Texas AI/R",
@@ -57,7 +68,6 @@
       { "title": "About me" },
       { "title": "Projects" },
       { "title": "Components" }
-
     ],
     "buttons": [
       { "text": "GitHub", "path": "https://github.com/marcorezon/" },
