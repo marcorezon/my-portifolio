@@ -16,7 +16,7 @@
       {
         "institution": "Instituto Federal de Roraima",
         "identification": "Systems Analysis and Development",
-        "logo": "/images/companies/ifrr.png",
+        "logo": "/images/companies/ifrr.jpg",
         "degree": "Associate Degree",
         "end date": "2026",
         "start date": "2023"
@@ -25,7 +25,7 @@
     "experiences": [
       {
         "company": "Compass Texas AI/R",
-        "logo": "/images/companies/compass.png",
+        "logo": "/images/companies/compass.jpg",
         "details": {
           "period": "5 months",
           "role": "Trainee Front-end Developer",
@@ -34,7 +34,7 @@
       },
       {
         "company": "Compass Uol AI/R",
-        "logo": "/images/companies/compass.png",
+        "logo": "/images/companies/compass.jpg",
         "details": {
           "period": "2 months",
           "role": "Trainee Front-end Developer",
@@ -43,7 +43,7 @@
       },
       {
         "company": "Compass Uol AI/R",
-        "logo": "/images/companies/compass.png",
+        "logo": "/images/companies/compass.jpg",
         "details": {
           "period": "6 months",
           "role": "Internship",
@@ -52,7 +52,7 @@
       },
       {
         "company": "Instituto Federal de Roraima",
-        "logo": "/images/companies/ifrr.png",
+        "logo": "/images/companies/ifrr.jpg",
         "details": {
           "period": "10 months",
           "role": "Scholarship Holder",
