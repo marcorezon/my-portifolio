@@ -23,8 +23,8 @@ export function Education() {
             <div className="flex flex-col justify-start">
               <span>{educationItemm.institution}</span>
               <span>{educationItemm.degree}</span>
-              <span>{educationItemm.identification}</span>
-              <span>
+              <span className="text-sm">{educationItemm.identification}</span>
+              <span className="text-sm">
                 • {educationItemm["start date"]} - {educationItemm["end date"]}
               </span>
             </div>

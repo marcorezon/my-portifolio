@@ -6,7 +6,7 @@ export function ContactInfo() {
       <h3>Contact information</h3>
       <div className="w-fit h-full flex flex-col items-start justify-start">
         {Object.entries(applicationData.contact).map(([key, value], index) => (
-          <span key={index}>
+          <span key={index} className="text-sm">
             {key}: {value}
           </span>
         ))}
