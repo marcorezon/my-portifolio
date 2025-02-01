@@ -1,6 +1,6 @@
 import { LinkButton } from "@/components/common/LinkButton/LinkButton";
-import applicationData from "../../../data/applicationData.json";
-import styles from "../../../styles/globalStyles.module.css";
+import applicationData from "../../data/applicationData.json";
+import styles from "../../styles/globalStyles.module.css";
 
 export function PresentationHeader() {
   return (

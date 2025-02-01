@@ -2,9 +2,9 @@
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import applicationData from "../../../data/applicationData.json";
-import { CarouselArrow } from "@/components/common/CarouselArrow/CarouselArrow";
 import { ProjectCarouselItem } from "./ProjectCarouselItem/ProjectCarouselItem";
+import { CarouselArrow } from "@/components/common/CarouselArrow/CarouselArrow";
+import applicationData from "../../data/applicationData.json";
 import styles from "../../../styles/globalStyles.module.css";
 
 const responsive = {

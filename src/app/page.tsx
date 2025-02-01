@@ -1,4 +1,4 @@
-import { PresentationHeader } from "@/components/Presentation/PresentationHeader/PresentationHeader";
+import { PresentationHeader } from "@/components/PresentationHeader/PresentationHeader";
 
 export default function Home() {
   return (
