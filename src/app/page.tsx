@@ -1,9 +1,9 @@
-import { Presentation } from "@/components/Presentation/Presentation";
+import { PresentationHeader } from "@/components/Presentation/PresentationHeader/PresentationHeader";
 
 export default function Home() {
   return (
-    <div className="h-full flex flex-col justify-center bg-transparent py-[5vh] lg:py-0">
-      <Presentation />
-    </div>
+    <section className="w-full h-full flex flex-col items-center justify-center bg-transparent gap-20 lg:gap-0">
+      <PresentationHeader />
+    </section>
   );
 }

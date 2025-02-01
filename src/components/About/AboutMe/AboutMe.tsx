@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ListItem } from "@/components/common/ListItem/ListItem";
 import styles from "../../../styles/globalStyles.module.css";
 import applicationData from "../../../data/applicationData.json";
