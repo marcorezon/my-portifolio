@@ -14,27 +14,16 @@ export function AboutMe() {
         <span>{applicationData.about_me.text}</span>
       </p>
       <div className="w-full flex items-center justify-around gap-2">
-        <div className="w-fit h-fit flex flex-col items-start justify-center bg-primary-dark rounded-3xl gap-5 p-[60px]">
+        <div className="w-full h-fit flex flex-col items-start justify-center gap-5 p-[10vh]">
           <IconRetriever iconName="coding" width={40} height={40}/>
-          <p className="text-xl mb-3">Front-end Develpment</p>
-          <ul className="flex flex-col gap-5">
+          <p className="text-xl mb-3">Front-end skils</p>
+          <ul className="flex flex-wrap gap-5">
             {applicationData.about_me.technologies.map(
               (technology: { name: string }, index: number) => (
                 <ListItem key={index} name={technology.name} />
               )
             )}
           </ul>
-        </div>
-        <div className="rounded-3xl">
-          <Image
-            src="/images/profile.png"
-            alt="Image"
-            height={300}
-            width={300}
-            objectFit="cover"
-            quality={100}
-            className="rounded-full"
-          />
         </div>
       </div>
     </section>
