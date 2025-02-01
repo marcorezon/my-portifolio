@@ -5,7 +5,7 @@ import { Experiences } from "@/components/About/Experiences/Experiences";
 
 export default function About() {
   return (
-    <div className="max-w-[1200px] h-full flex flex-col items-center justify-center bg-primary-transparent gap-[5vh] m-auto">
+    <div className="max-w-[1200px] h-full flexColCentered bg-primary-transparent gap-[5vh] m-auto">
       <AboutMe />
       <Education />
       <Experiences />

@@ -20,7 +20,7 @@ export function MobileHeaderItem({ title }: { title: string }) {
     <Link
       href={formatRedirectPath(title)}
       tabIndex={0}
-      className={`h-full w-full flex flex-col items-center justify-center p-2 rounded-full focus:bg-primary-transparent ${logicalController.displayBottomStyle}`}
+      className={`h-full w-full flexColCentered p-2 rounded-full focus:bg-primary-transparent ${logicalController.displayBottomStyle}`}
     >
       <IconRetriever
         iconName={title}

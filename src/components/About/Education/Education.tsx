@@ -3,7 +3,7 @@ import applicationData from "../../../data/applicationData.json";
 
 export function Education() {
   return (
-    <section className="w-full flex flex-col items-center justify-center">
+    <section className="w-full flexColCentered">
       <h2>Education</h2>
       <div className="w-full flex flex-col justify-start gap-7 px-[10%] py-[5%]">
         {applicationData.about_me.education.map((educationItemm, index) => (
