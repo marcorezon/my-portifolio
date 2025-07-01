@@ -2,8 +2,8 @@ import applicationData from "../../../data/applicationData.json";
 
 export function ContactInfo() {
   return (
-    <div className="w-full flex justify-around items-start">
-      <div className="w-fit h-full flex flex-col justify-start gap-5">
+    <div className="w-full flex gap-[8vh] items-start justify-around py-[5vh] xs:flex-col sm:flex-row">
+      <div className="h-full flex flex-col gap-5 items-start justify-start">
         <h3>Contact information</h3>
         <div className="w-fit h-full flex flex-col items-start justify-start">
           {Object.entries(applicationData.contact).map(
@@ -15,7 +15,7 @@ export function ContactInfo() {
           )}
         </div>
       </div>
-      <div className="flexColCentered">
+      <div className="flex flex-col gap-3 items-start">
         <h4>Location</h4>
         <span className="text-sm text-primary-grey">
           {applicationData.about_me.location}
