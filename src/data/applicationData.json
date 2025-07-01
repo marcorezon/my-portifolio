@@ -11,7 +11,6 @@
       { "name": "CSS" }
     ],
     "text": "Hi! I am a junior front-end developer with over a year of experience building websites. I am currently looking for a new oportunity, my inbox is aways open. Whether you have any question or just want to talk, i will try my best to get back to you!",
-    "age": "23 years old",
     "location": "Boa Vista, Roraima, Brazil",
     "education": [
       {
@@ -114,7 +113,7 @@
   "contact": {
     "E-mail": "marcorezonmoura1@gmail.com",
     "Phone number": "+51 95 99855-3887",
-    "LinkedIn": "",
-    "GitHub": ""
+    "LinkedIn": "linkedin.com/in/marco-rezon-4770b1222",
+    "GitHub": "github.com/marcorezon"
   }
 }
