@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IconRetriever } from "@/components/common/IconRetriever/IconRetriever";
 import formatRedirectPath from "@/shared/functions/formatRedirectPath";
 
 export function MobileHeaderItem({ title }: { title: string }) {
@@ -22,13 +21,6 @@ export function MobileHeaderItem({ title }: { title: string }) {
       tabIndex={0}
       className={`h-full w-full flexColCentered p-2 rounded-full focus:bg-primary-transparent ${logicalController.displayBottomStyle}`}
     >
-      <IconRetriever
-        iconName={title}
-        style="[&_path]:stroke-[#ffffff]"
-        width={25}
-        height={25}
-        pathVariant="headerIcons\"
-      />
       <span className="text-sm text-white">{title}</span>
     </Link>
   );
