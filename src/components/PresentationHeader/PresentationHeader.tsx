@@ -6,7 +6,7 @@ import { Arrow } from "../common/Arrow/Arrow";
 export function PresentationHeader() {
   return (
     <div
-      className={`h-full flexColCentered font-bold gap-[5vh] px-3 text-center ${styles.arise}`}
+      className={`flexColCentered font-bold gap-[5vh] px-3 text-center ${styles.arise}`}
     >
       <h1 className="flex flex-col">
         <span className="m-auto">

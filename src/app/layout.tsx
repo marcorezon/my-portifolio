@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <div className="w-full min-h-full pt-[75px]">{children}</div>
+        <div className="w-full max-h-full mt-[75px]">{children}</div>
         <BackgroundGradient />
       </body>
     </html>
