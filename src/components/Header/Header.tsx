@@ -1,12 +1,11 @@
 "use client";
 
-import { IconRetriever } from "../common/IconRetriever/IconRetriever";
+import Image from "next/image";
 import { MobileHeader } from "./MobileHeader/MobileHeader";
 import { ListHeaderItem } from "./ListHeaderItem/ListHeaderItem";
 import { useScreenSize } from "@/hooks/useScreenSize";
 import applicationData from "../../data/applicationData.json";
 import styles from "../../styles/globalStyles.module.css";
-import Image from "next/image";
 
 export function Header() {
   const screenSize = useScreenSize();
