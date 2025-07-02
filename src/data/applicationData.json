@@ -87,32 +87,26 @@
     {
       "title": "Dashboard Finances Buffer",
       "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      "technologies": ["React", "Javascript", "Typescript", "Next.JS"],
+      "technologies": ["React", "Javascript", "Typescript"],
       "image": "/images/projects/dashboard-finances.png"
     },
     {
-      "title": "Dashboard Finances Buffer",
+      "title": "My Ride",
       "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      "technologies": ["React", "Javascript", "Typescript", "Next.JS"],
-      "image": "/images/projects/dashboard-finances.png"
+      "technologies": ["React", "Javascript", "Typescript", "CSS"],
+      "image": "/images/projects/my-ride.png"
     },
     {
-      "title": "Dashboard Finances Buffer",
+      "title": "Plant Peace",
       "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      "technologies": ["React", "Javascript", "Typescript", "Next.JS"],
-      "image": "/images/projects/dashboard-finances.png"
+      "technologies": ["React", "Javascript", "CSS"],
+      "image": "/images/projects/plant-peace.png"
     },
     {
-      "title": "Dashboard Finances Buffer",
+      "title": "Compass Form",
       "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      "technologies": ["React", "Javascript", "Typescript", "Next.JS"],
-      "image": "/images/projects/dashboard-finances.png"
-    },
-    {
-      "title": "Dashboard Finances Buffer",
-      "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      "technologies": ["React", "Javascript", "Typescript", "Next.JS"],
-      "image": "/images/projects/dashboard-finances.png"
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "image": "/images/projects/compass-form.png"
     }
   ],
   "contact": {
