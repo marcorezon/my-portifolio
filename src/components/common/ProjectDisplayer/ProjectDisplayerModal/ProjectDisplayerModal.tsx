@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ProjectProps } from "@/shared/interfaces";
 import { BackButton } from "../../BackButton/BackButton";
 import { IconRetriever } from "../../IconRetriever/IconRetriever";

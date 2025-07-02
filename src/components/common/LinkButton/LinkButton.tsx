@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { IconRetriever } from "../IconRetriever/IconRetriever";
 
 interface LinkButtonProps {
