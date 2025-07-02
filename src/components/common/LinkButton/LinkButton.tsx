@@ -19,7 +19,7 @@ export function LinkButton({
   
 
   return (
-    <Link
+    <a
       href={path}
       target={isExternal ? "_blank" : "_self"}
       rel={isExternal ? "noopener noreferrer" : ""}
@@ -27,6 +27,6 @@ export function LinkButton({
     >
       {iconName && <IconRetriever iconName={iconName} width={24} height={24} />}
       {text && <span>{text}</span>}
-    </Link>
+    </a>
   );
 }

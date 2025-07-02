@@ -18,7 +18,7 @@ export function ProjectDisplayerModal({
       >
         <span className="w-full flex items-center justify-between">
           <BackButton handleClick={handleClick} style="self-start" />
-          <Link
+          <a
             href="https://github.com/your-repo"
             target="_blank"
             rel="noopener noreferrer"
@@ -26,7 +26,7 @@ export function ProjectDisplayerModal({
           >
             Check it on GitHub
             <IconRetriever iconName="github" />
-          </Link>
+          </a>
         </span>
         <div className="overflow-y-scroll">
           {Object.entries(project).map(([key, value], index) => (
