@@ -17,17 +17,19 @@ export function ProjectDisplayer({
     <div
       {...(handleClick ? { onClick: () => handleClick(project) } : {})}
       tabIndex={isFunctional ? 0 : -1}
-      className={`relative flex flex-col w-[300px] min-h-[300px] bg-primary-transparent rounded-md p-3 gap-4 shadow-lg ${
+      className={`relative flex flex-col w-[300px] h-[467px] bg-primary-transparent rounded-md p-3 gap-4 shadow-lg ${
         isFunctional ? functionalStyle : ""
       }`}
     >
-      <Image
-        src={project.image || ""}
-        height={550}
-        width={450}
-        className="rounded-md"
-        alt="Project image"
-      />
+      <div className="w-[276px] h-[195px] relative">
+        <Image
+          src={project.image || ""}
+          fill
+          style={{ objectFit: "cover" }}
+          className="rounded-md"
+          alt="Project image"
+        />
+      </div>
       <p className="text-sm text-primary-grey">{project.subtitle}</p>
       <h4>{project.title}</h4>
       <hr />
