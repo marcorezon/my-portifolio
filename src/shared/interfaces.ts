@@ -2,7 +2,8 @@ export interface ProjectProps {
   title: string;
   subtitle: string;
   technologies: string[];
-  image?: string;
+  image: string;
+  link: string;
 }
 
 export interface ExperienceDetais {

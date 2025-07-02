@@ -88,25 +88,30 @@
       "title": "Dashboard Finances Buffer",
       "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       "technologies": ["React", "Javascript", "Typescript"],
-      "image": "/images/projects/dashboard-finances.png"
+      "image": "/images/projects/dashboard-finances.png",
+      "link": "https://github.com/marcorezon/dashboard-finances-buffer"
     },
     {
       "title": "My Ride",
       "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       "technologies": ["React", "Javascript", "Typescript", "CSS"],
-      "image": "/images/projects/my-ride.png"
+      "image": "/images/projects/my-ride.png",
+      "link": "https://github.com/marcorezon/Compass-PB---Projeto-3"
     },
     {
       "title": "Plant Peace",
       "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       "technologies": ["React", "Javascript", "CSS"],
-      "image": "/images/projects/plant-peace.png"
+      "image": "/images/projects/plant-peace.png",
+      "link": "https://github.com/marcorezon/Compass-PB---Projeto-2"
+
     },
     {
       "title": "Compass Form",
       "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       "technologies": ["Javascript", "HTML", "CSS"],
-      "image": "/images/projects/compass-form.png"
+      "image": "/images/projects/compass-form.png",
+      "link": "https://github.com/marcorezon/Compass-PB---Projeto-1"
     }
   ],
   "contact": {
