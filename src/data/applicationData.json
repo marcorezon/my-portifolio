@@ -70,10 +70,10 @@
       { "title": "Components" }
     ],
     "buttons": [
-      { "text": "GitHub", "path": "https://github.com/marcorezon/" },
+      { "text": "GitHub", "path": "https://github.com/marcorezon" },
       {
         "text": "LinkedIn",
-        "path": "www.linkedin.com/in/marco-rezon-4770b1222"
+        "path": "https://linkedin.com/in/marco-rezon-4770b1222"
       }
     ]
   },
