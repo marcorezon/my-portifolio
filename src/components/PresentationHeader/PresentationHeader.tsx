@@ -1,7 +1,8 @@
+import Link from "next/link";
 import { LinkButton } from "@/components/common/LinkButton/LinkButton";
+import { Arrow } from "../common/Arrow/Arrow";
 import applicationData from "../../data/applicationData.json";
 import styles from "../../styles/globalStyles.module.css";
-import { Arrow } from "../common/Arrow/Arrow";
 
 export function PresentationHeader() {
   return (
@@ -16,13 +17,13 @@ export function PresentationHeader() {
           {applicationData.about_me.role}
         </span>
       </h1>
-      <a
+      <Link
         className={`flex items-center gap-2 cursor-pointer hover:scale-105 ${styles.arise}`}
         href="/about-me"
       >
         <span className="text-xl">About me</span>
         <Arrow />
-      </a>
+      </Link>
       <div className="fixed bottom-[7dvh] flex gap-10">
         {applicationData.header.buttons.map((buttonItem, index) => (
           <LinkButton
