@@ -6,7 +6,7 @@ import { Arrow } from "../common/Arrow/Arrow";
 export function PresentationHeader() {
   return (
     <div
-      className={`flexColCentered font-bold gap-[5vh] px-3 text-center ${styles.arise}`}
+      className={`h-full flexColCentered font-bold gap-[5vh] px-3 text-center ${styles.arise}`}
     >
       <h1 className="flex flex-col">
         <span className="m-auto">
@@ -23,7 +23,7 @@ export function PresentationHeader() {
         <span className="text-xl">About me</span>
         <Arrow />
       </a>
-      <div className="fixed bottom-[7vh] flex gap-10">
+      <div className="fixed bottom-[7dvh] flex gap-10">
         {applicationData.header.buttons.map((buttonItem, index) => (
           <LinkButton
             key={index}
