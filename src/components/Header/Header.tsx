@@ -21,8 +21,8 @@ export function Header() {
       <Image
         src={"/images/headerIcons/marco-logo.svg"}
         alt="Marco Rezon logo"
-        width={200}
-        height={200}
+        width={150}
+        height={150}
       />
       <nav className="flex flex-row items-center justify-around xs:w-[70%] xl:w-[40%]">
         {applicationData.header.options.map(
