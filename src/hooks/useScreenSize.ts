@@ -7,34 +7,32 @@ interface ScreenSize {
 }
 
 function applySizes(): ScreenSize {
+  const width = window.innerWidth;
   return {
-    isMobile: window.innerWidth < 640,
-    isTablet: window.innerWidth >= 640 && window.innerWidth < 1024,
-    isDesktop: window.innerWidth >= 1024,
+    isMobile: width < 640,
+    isTablet: width >= 640 && width < 1024,
+    isDesktop: width >= 1024,
   };
 }
 
-export function useScreenSize() {
-  const [screenSize, setScreenSize] = useState<ScreenSize>(() => {
-    if (typeof window !== "undefined") {
-      return applySizes();
-    }
-    return { isMobile: false, isTablet: false, isDesktop: false };
+export function useScreenSize(): ScreenSize {
+  const [screenSize, setScreenSize] = useState<ScreenSize>({
+    isMobile: false,
+    isTablet: false,
+    isDesktop: false,
   });
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const handleResize = () => {
-        setScreenSize(applySizes());
-      };
+    const handleResize = () => {
+      setScreenSize(applySizes());
+    };
 
-      window.addEventListener("resize", handleResize);
-      handleResize();
+    handleResize();
+    window.addEventListener("resize", handleResize);
 
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return screenSize;
