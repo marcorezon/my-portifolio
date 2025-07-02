@@ -14,10 +14,18 @@
     rgba(66, 66, 66, 0),
     rgba(0, 0, 0, 0.322)
   );
-  backdrop-filter: blur(60px);
+  backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.048);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.darkGlass {
+  background: linear-gradient(
+    135deg,
+    rgba(99, 154, 163, 0.945),
+    rgba(9, 146, 238, 0.795)
+  );
 }
 
 @keyframes appear {
@@ -30,7 +38,6 @@
     transform: scale(1);
   }
 }
-
 
 @media screen and (max-width: 640px) {
   .glass {

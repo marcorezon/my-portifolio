@@ -13,7 +13,7 @@ export function ProjectDisplayerModal({
   return (
     <div className="fixed w-[100vw] flex items-center justify-center md:top-0 md:h-full">
       <div
-        className={`relative w-[90vw] h-[calc(90svh-75px)] flex flex-col gap-8 p-10 rounded-3xl md:w-[50vw] md:h-[50vh] ${styles.glass}`}
+        className={`relative w-[90vw] h-[calc(90svh-75px)] flex flex-col gap-8 p-10 rounded-3xl md:w-[50vw] md:h-[50vh] ${styles.glass} ${styles.darkGlass}`}
       >
         <span className="w-full flex items-center justify-between">
           <BackButton handleClick={handleClick} style="self-start" />
