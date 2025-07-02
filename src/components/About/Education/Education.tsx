@@ -9,7 +9,7 @@ export function Education() {
         {applicationData.about_me.education.map((educationItemm, index) => (
           <div
             key={index}
-            className="flex items-center justify-start items-start border-b border-primary-transparent py-3 gap-5"
+            className="flex items-center justify-start items-start border-b border-primary-lightTransparent py-3 gap-5"
           >
             <Image
               src={educationItemm.logo}
