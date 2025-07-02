@@ -7,7 +7,7 @@ export function MobileHeaderItem({ title }: { title: string }) {
 
   const logicalController = { displayBottomStyle: "", borderFormat: null };
   const bottomStyle =
-    "before:absolute before:bottom-2 before:h-1 before:min-w-[3rem] before:rounded-md before:bg-white";
+    "before:absolute before:bottom-3 before:h-1 before:min-w-[2rem] before:rounded-md before:bg-white";
 
   if (pathname.length === 1 && title === "Home") {
     logicalController.displayBottomStyle = bottomStyle;

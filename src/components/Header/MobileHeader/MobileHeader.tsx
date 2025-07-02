@@ -7,7 +7,7 @@ export function MobileHeader() {
     <div
       className={`fixed w-full h-[75px] top-0 flex items-center z-10 border-0 ${styles.glass}`}
     >
-      <nav className="flex flex-row justify-around w-full">
+      <nav className="flex flex-row justify-around w-full px-4">
         {applicationData.header.options.slice(0,3).map(
           (option: { title: string }, index: number) => (
             <MobileHeaderItem key={index} title={option.title} />
