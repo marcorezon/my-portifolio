@@ -28,11 +28,16 @@ export function ProjectDisplayerModal({
           </a>
         </span>
         <div className="overflow-y-scroll">
-          {Object.entries(project).map(([key, value], index) => (
-            <span key={index}>
-              {key}: {value}
-            </span>
-          ))}
+          <h2>{project.title}</h2>
+          <div className="flexColCenter">
+            <p className="my-8">{project.subtitle}</p>
+            <p>
+              Stacks:{" "}
+              {project.technologies.map((tech, index) => (
+                <span key={index}>{tech} </span>
+              ))}
+            </p>
+          </div>
         </div>
       </div>
     </div>
