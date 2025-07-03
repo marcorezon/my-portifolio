@@ -50,6 +50,9 @@ module.exports = {
         ".fullScreen": {
           height: "calc(100dvh - 75px)",
         },
+        ".minFullScreen": {
+          minHeight: "calc(100dvh - 75px - 100px)",
+        },
       };
       addUtilities(newUtilities, ["responsive", "hover"]);
     },

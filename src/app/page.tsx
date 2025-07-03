@@ -2,7 +2,7 @@ import { PresentationHeader } from "@/components/PresentationHeader/Presentation
 
 export default function Home() {
   return (
-    <section className="w-full fullScreen flexColCentered bg-transparent gap-20 lg:gap-0">
+    <section className="w-full minFullScreen flexColCentered bg-transparent gap-20 lg:gap-0">
       <PresentationHeader />
     </section>
   );

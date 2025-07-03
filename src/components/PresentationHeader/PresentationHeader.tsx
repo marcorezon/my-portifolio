@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { LinkButton } from "@/components/common/LinkButton/LinkButton";
 import { Arrow } from "../common/Arrow/Arrow";
 import applicationData from "../../data/applicationData.json";
 import styles from "../../styles/globalStyles.module.css";
@@ -24,17 +23,6 @@ export function PresentationHeader() {
         <span className="text-xl">About me</span>
         <Arrow />
       </Link>
-      <div className="fixed bottom-[7dvh] flex gap-10">
-        {applicationData.header.buttons.map((buttonItem, index) => (
-          <LinkButton
-            key={index}
-            path={buttonItem.path}
-            text={buttonItem.text}
-            iconName={buttonItem.text}
-            isExternal
-          />
-        ))}
-      </div>
     </div>
   );
 }
