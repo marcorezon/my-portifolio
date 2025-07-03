@@ -5,7 +5,7 @@ import { StacksDisplayer } from "@/components/About/AboutMe/StacksDisplayer/Stac
 
 export default function About() {
   return (
-    <div className="max-w-[1200px] h-full flexColCentered bg-primary-transparent gap-[5vh] m-auto">
+    <div className="max-w-[1000px] h-full flexColCentered bg-primary-transparent gap-[5vh] m-auto">
       <AboutMe />
       <Education />
       <Experiences />
