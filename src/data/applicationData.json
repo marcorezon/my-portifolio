@@ -66,8 +66,7 @@
     "options": [
       { "title": "Home" },
       { "title": "About me" },
-      { "title": "Projects" },
-      { "title": "Components" }
+      { "title": "Projects" }
     ],
     "buttons": [
       { "text": "GitHub", "path": "https://github.com/marcorezon" },
