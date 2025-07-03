@@ -51,7 +51,7 @@ module.exports = {
           height: "calc(100dvh - 75px)",
         },
         ".minFullScreen": {
-          minHeight: "calc(100dvh - 75px - 100px)",
+          minHeight: "calc(100dvh - 75px - 140px)",
         },
       };
       addUtilities(newUtilities, ["responsive", "hover"]);
