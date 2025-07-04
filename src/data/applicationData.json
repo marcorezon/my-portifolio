@@ -85,13 +85,11 @@
   "projects": [
     {
       "title": "Dashboard Finances Buffer",
-      "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "subtitle": "This project is a bank-like financial statement manager, developed collaboratively by a team of five developers. It simulates core banking functionalities with a focus on performance, usability, and maintainability.",
       "keys": [
-        "Responsive Design: The website is fully responsive, ensuring a seamless experience across devices.",
-        "Interactive Features: Includes a dynamic search functionality and a user-friendly interface for plant care tips.",
-        "Responsive Design: The website is fully responsive, ensuring a seamless experience across devices.",
-        "Interactive Features: Includes a dynamic search functionality and a user-friendly interface for plant care tips.",
-        "API Integration: Utilizes an external API to fetch plant data, enhancing the user experience with real-time information."
+        "Front-End Stack: Built using React, TypeScript, Tailwind CSS, and Base UI, combining utility-first styling with a flexible component library.",
+        "Testing & Quality Assurance: Implemented comprehensive front-end testing using Vitest for unit tests and Cypress for end-to-end testing.",
+        "Component Documentation: All UI components were documented using Storybook, ensuring consistency and ease of collaboration across the team."
       ],
       "technologies": ["React", "Javascript", "Typescript"],
       "image": "/images/projects/dashboard-finances.png",
@@ -99,11 +97,11 @@
     },
     {
       "title": "My Ride",
-      "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "subtitle": "This project is a sample application designed for a ride request platform, developed using modern front-end technologies to ensure both performance and visual consistency.",
       "keys": [
-        "Responsive Design: The website is fully responsive, ensuring a seamless experience across devices.",
-        "Interactive Features: Includes a dynamic search functionality and a user-friendly interface for plant care tips.",
-        "API Integration: Utilizes an external API to fetch plant data, enhancing the user experience with real-time information."
+        "Tech Stack: Built with React.js, TypeScript, Material UI, and Styled Components to deliver a robust and scalable user interface.",
+        "Design Consistency: The combination of Material UI and Styled Components was strategically chosen to meet specific design requirements while optimizing development time.",
+        "Efficient Development: Leveraging pre-built style libraries allowed the team to stay within the project’s time constraints without compromising on quality or user experience."
       ],
       "technologies": ["React", "Javascript", "Typescript", "CSS"],
       "image": "/images/projects/my-ride.png",
@@ -111,11 +109,11 @@
     },
     {
       "title": "Plant Peace",
-      "subtitle": "Dashboard Finances Buffer dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      "subtitle": "This is my second front-end project developed during my internship at Compass UOL. It’s an e-commerce website focused on selling plants, built collaboratively by a team of four developers.",
       "keys": [
-        "Responsive Design: The website is fully responsive, ensuring a seamless experience across devices.",
-        "Interactive Features: Includes a dynamic search functionality and a user-friendly interface for plant care tips.",
-        "API Integration: Utilizes an external API to fetch plant data, enhancing the user experience with real-time information."
+        "Modern Tech Stack: Built using React.js and CSS Modules, ensuring reusable components and custom styling across the application.",
+        "Real-Time Form Validation: The plant registration page includes a form with real-time input validation, manually implemented by me using JavaScript.",
+        "Modular & Custom Design:** CSS Modules were used to craft exclusive, component-scoped styles, enhancing both maintainability and visual consistency."
       ],
       "technologies": ["React", "Javascript", "CSS"],
       "image": "/images/projects/plant-peace.png",
