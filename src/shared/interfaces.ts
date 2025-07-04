@@ -1,6 +1,7 @@
 export interface ProjectProps {
   title: string;
   subtitle: string;
+  keys: string[];
   technologies: string[];
   image: string;
   link: string;
